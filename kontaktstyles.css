@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: #DCE5E2;
+  }
+
+  .logokontakt{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .overskrift{
+    display: flex;
+    justify-content: center;
+    color: #4D7373;
+  }
+
+  .tekst{
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4D7373;
+    text-align: center;
+  }
+
+  .knap{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    color:#4D7373;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F59C6B;
+    border: none;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    border-radius: 20px;
+  }
