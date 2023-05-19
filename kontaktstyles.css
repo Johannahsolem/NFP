@@ -49,6 +49,12 @@
     margin: 4px 2px;
     border-radius: 16px;
   }
+  
+  .button:hover{
+    color: #F59C6B;
+    background-color: #4D7373;
+    transition: 0.5s;
+  }
 
   .kontaktinfo ul{
     display: flex;
