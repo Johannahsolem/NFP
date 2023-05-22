@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/*MOBIL*/
+@media screen and (max-width:910px) {
+
+  /*HEADER*/
+  .navlaptop {
+      display: none;
+  }
+
+  .navmobil {
+      display: block;
+  }
+
+  .navmobil a {
+    text-decoration: none;
+  }
+
+  header img {
+      position: relative;
+      float: left;
+
+      width: 20%;
+      margin-top: 5px;
+      margin-left: 20px;
+
+  }
+
+  /*FOOTER*/
+  footer>section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 8%;
+  }
+
+
+  /*FOOTER ADRESSE OG TLF OG ÅBNINGSTIDER*/
+  .adresse-tlf {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 50px;
+  }
+
+  footer .tlf a {
+      text-decoration: none;
+      color: #CEA948;
+  }
+
+  .adresse-åbning {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+  }
+
+  .adresse-åbning h2 {
+      font-size: 12pt;
+  }
+
+  .adresse-åbning p {
+      line-height: 1.2;
+      font-size: small;
+  }
+
+  /*ÅBNINGSTIDER LISTE*/
+  footer ul li {
+      font-family: 'Arsenal', sans-serif;
+      font-size: x-small;
+      line-height: 1.5;
+  }
+
+
+}
+
+
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+
+  /*HEADER*/
+  header img {
+      position: relative;
+      float: left;
+      margin-left: 50px;
+  }
+
+  #navLaptop {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+  }
+
+  #navLaptop a {
+      position: relative;
+      text-decoration: none;
+      margin-right: 50px;
+      font-size: 16pt;
+      padding-bottom: 10px;
+
+      float: right;
+  }
+
+
+  #navlaptop a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #CEA948;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+  }
+
+  #navlaptop a:hover::before {
+      transform: scaleX(1);
+  }
+
+
+  header #navmobil {
+      display: none;
+  }
+
+  /*FOOTER STYLES*/
+  footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      background-color: #4D7373;
+      padding: 5%;
+  }
+
+  div>p, h3{
+    color: #95C3B4;
+  }
+}
