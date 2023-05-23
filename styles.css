@@ -1,36 +1,47 @@
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-body{
+body {
     overflow: hidden;
     background-color: #DCE5E2;
+    color: #4D7373;
+}
+
+img {
+    max-width: 100%;
 }
 
 
-main h1, main h2{
+main h1,
+main h2 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
 }
 
-main p{
+main p, button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-#frontVidContainer video, #om img, #roomTat img, #stemningsBilleder, #shop img, #roomPaintings img{
-    width:100%;
+#frontVidContainer video,
+#om img,
+#roomTat img,
+#stemningsBilleder,
+#shop img,
+#roomPaintings img {
+    width: 100%;
 }
 
 
 /*PARALLAX*/
-#roomTat{
+#roomTat {
     /*img used*/
     background-image: url(images/portrætter/bigpic.JPG);
 
@@ -44,72 +55,93 @@ main p{
     background-size: cover;
 }
 
-#stemningsBilleder{
-        /*img used*/
-        background-image: url(images/lokale/stemningsbilleder.png);
+#stemningsBilleder {
+    /*img used*/
+    background-image: url(images/lokale/stemningsbilleder.png);
 
-        /*specific height*/
-        min-height: 500px;
-    
-        /*parallax scrolling effect*/
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    /*specific height*/
+    min-height: 500px;
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*OM OS SEKTION*/
-#om{
+#om {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 
     padding: 10% 10% 10% 10%;
 
 }
 
-#om > div:nth-child(2) h1{
-    color:#4D7373
+
+#om>div:nth-child(2) h1 {
+    padding-bottom: 2rem;
 }
 
+#om>div:nth-child(2) p {
+    color:#4D7373;
+    line-height: 1.5em;
+}
 
-#shop, #roomPaintings{
-    width:50%;
+button{
+    margin-top:1rem;
+    padding:2%;
+    border-radius: 10px;
+
+    color:#F59C6B;
+    background-color: #DCE5E2;
+    border:1px solid #F59C6B;
+
+    transition: .5s ease-in-out;
+}
+
+button:hover{
+    color:#DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+
+    cursor:pointer;
+}
+
+#shop,
+#roomPaintings {
+    position: relative;
+    width: 50%;
     border-radius: 20px;
     overflow: hidden;
-
-    background-repeat:no-repeat,repeat;
-    background-image: url(images/lokale/lokale.JPG), url(images/butik/overlay.png);
-    background-blend-mode: overlay;
+    background-color: rgba(77, 115, 115, 1);
 }
 
-#shop img, #roomPaintings img{
+#shop img,
+#roomPaintings img {
     border-radius: 20px;
     transform: scale(1);
-    opacity: 1;
+    opacity: .6;
+
     transition: 1s ease-in-out;
 }
 
-#shop img:hover, #roomPaintings img:hover{
+#shop img:hover,
+#roomPaintings img:hover {
+    opacity: .8;
     transform: scale(1.1);
-    opacity: 0;
+
 }
 
-#shop{
-    position:relative;
+#shop {
     z-index: 1;
-
 }
 
-#roomPaintings{
+#roomPaintings {
     z-index: 0;
-    position:relative;
-    left:15em;
-    bottom:5em;
-    
+    position: relative;
+    left: 15em;
+    bottom: 5em;
 }
-
-
-
-
-
