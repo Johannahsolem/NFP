@@ -58,7 +58,7 @@ button {
 #frontVidContainer h1 {
     position: absolute;
 
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 54px;
@@ -71,7 +71,7 @@ button {
 #frontVidContainer button {
     position: absolute;
 
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
