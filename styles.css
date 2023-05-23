@@ -22,22 +22,16 @@ main p{
     font-style: normal;
 }
 
-#frontVidContainer{
+#frontVidContainer video, #om img, #roomTat img, #stemningsBilleder{
     width:100%;
 }
 
-#frontVidContainer video{
-    width:100%;
-}
-
-#om img, #roomTat img{
-    width:100%;
-}
 
 #shop, #roomPaintings{
     width:30%;
 }
 
+/*PARALLAX*/
 #roomTat{
     /*img used*/
     background-image: url(images/portrætter/bigpic.JPG);
@@ -51,4 +45,20 @@ main p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#stemningsBilleder{
+        /*img used*/
+        background-image: url(images/lokale/stemningsbilleder.png);
+
+        /*specific height*/
+        min-height: 500px;
+    
+        /*parallax scrolling effect*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
 
