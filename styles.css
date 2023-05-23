@@ -5,9 +5,11 @@
     overflow-x:hidden;
 }
 
-main{
+body{
+    overflow: hidden;
     background-color: #DCE5E2;
 }
+
 
 main h1, main h2{
     font-family: "espiritu", sans-serif;
@@ -22,14 +24,10 @@ main p{
     font-style: normal;
 }
 
-#frontVidContainer video, #om img, #roomTat img, #stemningsBilleder{
+#frontVidContainer video, #om img, #roomTat img, #stemningsBilleder, #shop img, #roomPaintings img{
     width:100%;
 }
 
-
-#shop, #roomPaintings{
-    width:30%;
-}
 
 /*PARALLAX*/
 #roomTat{
@@ -59,6 +57,59 @@ main p{
         background-repeat: no-repeat;
         background-size: cover;
 }
+
+/*OM OS SEKTION*/
+#om{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10% 10% 10% 10%;
+
+}
+
+#om > div:nth-child(2) h1{
+    color:#4D7373
+}
+
+
+#shop, #roomPaintings{
+    width:50%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-repeat:no-repeat,repeat;
+    background-image: url(images/lokale/lokale.JPG), url(images/butik/overlay.png);
+    background-blend-mode: overlay;
+}
+
+#shop img, #roomPaintings img{
+    border-radius: 20px;
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#shop img:hover, #roomPaintings img:hover{
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+#shop{
+    position:relative;
+    z-index: 1;
+
+}
+
+#roomPaintings{
+    z-index: 0;
+    position:relative;
+    left:15em;
+    bottom:5em;
+    
+}
+
+
 
 
 
