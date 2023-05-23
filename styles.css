@@ -16,14 +16,21 @@ img {
 }
 
 
-main h1,
-main h2 {
+main h1 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 2em;
     font-style: normal;
     text-transform: uppercase;
 
+}
+
+main h2{
+    font-family: "espiritu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 main p,
@@ -31,7 +38,7 @@ button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 12pt;
+    font-size: 1em;
 }
 
 #frontVidContainer video,
@@ -134,18 +141,18 @@ button {
 }
 
 
-#om>div:nth-child(2) h1 {
+#om>div:nth-child(2) h1, #besked h1 {
     padding-bottom: 2rem;
 }
 
-#om>div:nth-child(2) p {
+#om>div:nth-child(2) p, #besked p {
     color: #4D7373;
     line-height: 1.5em;
 }
 
 button {
     margin-top: 1rem;
-    padding: 2%;
+    padding: 2% 4% 2% 4%;
     border-radius: 10px;
 
     color: #F59C6B;
@@ -205,8 +212,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:5%;
-    padding-top:10%;
+    padding:10%;
+    padding-top:12%;
 
     text-align: center;
     height:5%;
@@ -248,6 +255,17 @@ button:hover {
     width: 100%;
 }
 
+.artist, .placeholder{
+    opacity:1;
+    transition: 1s ease-in-out;
+}
+
+.artist:hover, .placeholder:hover{
+    
+    opacity:0.9;
+    transition: 1s ease-in-out;
+}
+
 .placeholder {
     position:relative;
 
@@ -259,25 +277,83 @@ button:hover {
 .artistTxtContainer {
     position: absolute;
     z-index: 1;
-    bottom: 130px;
+    bottom: 120px;
     text-align: center;
 
     border-radius: 30px 30px 10px 10px;
+    height:148px;
 
 
     background-color: rgba(77, 115, 115, 0.6);
     color: #DCE5E2;
+
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.artistTxtContainer:hover {
+    position: absolute;
+    bottom: 305px;
+    text-align: center;
+
+    border-radius: 30px 30px 10px 10px;
+
+    height:248px;
+
+
+    background-color: rgba(77, 115, 115, 0.9);
+    color: #DCE5E2;
+
+    transition: 1s ease-in-out;
+    cursor: pointer;
 }
 
 .artistTxtContainer h2 {
     padding: 20px;
-    margin-bottom: 5%;
+    margin-bottom:1%;
+
 }
 
 .artistTxtContainer p {
     padding: 20px;
-    padding-bottom:50px;
+
     text-align: center;
 
     color: #DCE5E2;
+}
+
+/*KONTAKT OS SEKTION*/
+#besked{
+    background-image: url(images/lokale/bgplante.JPG), url(images/pynt/bg.png);
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-size: cover;
+
+    padding:15%;
+
+    text-align: center;
+}
+
+#besked p{
+    padding:0% 10% 0% 10%;
+}
+
+#besked > button {
+    margin-top: 2em;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+
+    color: #F59C6B;
+    background-color: transparent;
+    border: 1px solid #F59C6B;
+
+    transition: .5s ease-in-out;
+}
+
+#besked > button:hover {
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+
+    cursor: pointer;
 }

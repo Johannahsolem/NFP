@@ -13,7 +13,7 @@
 
     <title>Nord for Paradis</title>
 
-    <!--Google og Adobe Fonts-->
+    <!--GOOGLE OG ADOBE FONTS-->
     <!--Overskrifter-->
     <link rel="stylesheet" href="https://use.typekit.net/bia2gdi.css">
     <!--Brødtekst-->
@@ -23,17 +23,20 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!--Font Awesome-->
+    <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/60cddcb918.js" crossorigin="anonymous"></script>
 
-    <!--Styles-->
+    <!--STYLES-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="headerfooter.css">
     <!--<link rel="stylesheet" href="responsive.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!--SCRIPT-->
     <script src="script.js" defer></script>
 
-    <!--Favicon-->
+
+    <!--FAVICON-->
 
 
 </head>
@@ -59,6 +62,9 @@
 
     <main>
         <div id="frontVidContainer">
+            <h1 id="godmorgen"></h1>
+            <h1 id="godEftermiddag"></h1>
+            <h1 id="godAften"></h1>
             <h1>Nord for Paradis</h1>
             <!--TODO: javascript for tryk a knap--><button onclick="contact">Kontakt</button>
             <div>&#9660;</div>
@@ -68,22 +74,22 @@
 
         <section id="om">
             <div>
-                <div id="shop">
+                <div data-aos="fade-right" data-aos-delay="50" id="shop">
                     <img id="test" src="images/butik/front.JPG" alt="Butik front">
                 </div>
-                <div id="roomPaintings">
+                <div data-aos="fade-right" id="roomPaintings">
                     <img src="images/lokale/lokale.JPG" alt="Billeder på væggen">
                 </div>
             </div>
 
 
             <div>
-                <h1>Startskuddet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <h1 data-aos="fade-left">Startskuddet</h1>
+                <p data-aos="fade-left" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. </p>
-                <button>Læs mere</button>
+                <button data-aos="fade-left" data-aos-delay="150">Læs mere</button>
             </div>
         </section>
 
@@ -95,20 +101,20 @@
 
 
         <section id="artister">
-            <h1>Artister</h1>
+            <h1 data-aos="fade-down">Artister</h1>
 
             <div id="artistKort">
-                <div>
+                <div data-aos="fade-up">
                     <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
                     
-                    <div class="artistTxtContainer">
+                    <div class="artistTxtContainer" >
                         <h2>Rass</h2>
                         <p>Beskrivelse af deres tatoveringsstil</p>
                     </div>
     
                 </div>
     
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
                     
                     <div class="artistTxtContainer">
@@ -118,7 +124,7 @@
     
                 </div>
                 
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <div class="placeholder"><img src="images/portrætter/placeholder.png" alt="Placeholder"></div>
                     <div class="artistTxtContainer">
                         <h2>Navn</h2>
@@ -127,7 +133,7 @@
     
                 </div>
     
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <div class="placeholder"><img src="images/portrætter/placeholder.png" alt="Placeholder"></div>
                     <div class="artistTxtContainer">
                         <h2>Navn</h2>
@@ -143,17 +149,15 @@
 
         <div id="stemningsBilleder"></div>
 
-        <section>
-            <h1>Smid en besked</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <section id="besked">
+            <h1 data-aos="fade-down">Smid en besked</h1>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
-            <button></button>
+            <button data-aos="fade-up" data-aos-delay="200">Kontakt os</button>
         </section>
-
-
     </main>
 
     <footer>
@@ -185,7 +189,14 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+        });
+    </script>
 </body>
+
+
 
 </html>
