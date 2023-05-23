@@ -119,6 +119,7 @@ height: 500px;
     -webkit-filter: blur(8px);
     height: 800px;
     width: 100%;
+    opacity: 0.5;
   }
 
   .bg-text button{
