@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+main{
+    background-color: #DCE5E2;
+}
+
+main h1, main h2{
+    font-family: "espiritu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+main p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#frontVidContainer{
+    width:100%;
+}
+
+#frontVidContainer video{
+    width:100%;
+}
+
+#om img, #roomTat img{
+    width:100%;
+}
+
+#shop, #roomPaintings{
+    width:30%;
+}
+
+#roomTat{
+    /*img used*/
+    background-image: url(images/portrætter/bigpic.JPG);
+
+    /*specific height*/
+    min-height: 500px;
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
