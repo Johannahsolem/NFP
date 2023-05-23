@@ -58,7 +58,7 @@ button {
 #frontVidContainer h1 {
     position: absolute;
 
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 54px;
@@ -71,7 +71,7 @@ button {
 #frontVidContainer button {
     position: absolute;
 
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
@@ -261,7 +261,7 @@ button:hover {
 }
 
 .artist:hover, .placeholder:hover{
-    
+
     opacity:0.9;
     transition: 1s ease-in-out;
 }
@@ -291,6 +291,7 @@ button:hover {
     cursor: pointer;
 }
 
+/*TODO: FIKSSSS DET HER*/
 .artistTxtContainer:hover {
     position: absolute;
     bottom: 305px;

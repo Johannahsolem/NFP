@@ -1,34 +1,41 @@
-let data;
-const gMorgen = document.getElementById('godmorgen');
-const gEfter = document.getElementById('godEftermiddag');
-const gAften = document.getElementById('godAften');
+const hello = document.getElementById("hello");
+const nfp = document.getElementById("nfp");
 
-const array = [gMorgen, gEfter, gAften];
+const timeOut = setTimeout(greetMe);
+const stopTime = setTimeout(changeTxt, 4000)
 
-array[0].style.display = "none";
-array[1].style.display = "none";
-array[2].style.display = "none";
 
-fetch('http://worldtimeapi.org/api/timezone/Europe/Copenhagen')
+//VELKOMST AFHÆNGIG AF TID PÅ DAGEN
+function greetMe(){
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+        greeting = "Godmorgen!";
+    } else if (time < 20) {
+        greeting = "God eftermiddag!";
+    } else {
+        greeting = "God aften!"
+    };
 
-    .then(function (response) {
-        return response.json();
-    })
-
-    //TODO: FIKS DET HERRRRRRRR
-    if(function (obj){
-        data = obj;
-        array[0].innerHTML = "Hello: " + data.timezone;
-    })else if(function (obj){
-        data = obj;
-    })else(function (obj){
-        data = obj;
-    })
+    nfp.style.display ="none";
+    hello.innerHTML = greeting;
 
 
 
-    .catch(function (error) {
-        alert("Nothing");
-    })
+    
+}
+
+function changeTxt(){
+    nfp.style.paddingBottom ="50px";
+
+    nfp.style.display ="block";
+    hello.style.display = "none";
+}
+
+
+
+
+
+
 
 
