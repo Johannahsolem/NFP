@@ -210,7 +210,7 @@ button:hover {
     height:5%;
 
 
-    background-image: url(images/pynt/branch.png), url(images/pynt/bg.png);
+    background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
     background-repeat: no-repeat;
     background-blend-mode:overlay;
     background-size: cover;
