@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+#artistBigPhoto{
+  width: 100%;
+}
+
+/*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+  .navmobil{
+      display: block;
+  }
+
+  .sideoverskrift{
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 16pt;
+  }
+
+  .tekstunderoverskrift{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+  }
+
+  .medalkohol, .udenalkohol{
+      margin-left: 30px;
+      margin-bottom: 5px;
+      font-size: 13pt;
+  }
+
+  .kort div{
+      display: flex;
+      flex-direction: column;
+
+      background-color:#FFDB80;
+
+      border-radius: 10px;
+      height: auto;
+
+      margin-bottom: 10px;
+  }
+
+  .kort{
+      margin-bottom: 50px;
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+
+  .opskrifttekst{
+      padding: 20px;
+  }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+  .artisten{
+      padding: 50px;
+      border-radius: 10px;
+      margin-left: 25px;
+  }
+
+  .artistenParentElement {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .artisten {
+    display: inline-block;
+    background-color: #DCE5E2;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: #DCE5E2;
+  }
+
+  section{
+    background-color: #F5F9F8;
+  }
+
+  section>p, h3{
+    color: #4D7373;
+}
+
+  /*RESPONSIV*/
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    .navmobil{
+        display: block;
+    }
+
+    .sideoverskrift{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16pt;
+    }
+
+    .tekstunderoverskrift{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .medalkohol, .udenalkohol{
+        margin-left: 30px;
+        margin-bottom: 5px;
+        font-size: 13pt;
+    }
+
+    .kort div{
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 10px;
+        height: auto;
+
+        margin-bottom: 10px;
+    }
+
+    .kort{
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .opskrifttekst{
+        padding: 20px;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 910px) {
+    #faqBigPhoto{
+        width: 100%;
+      }
+
+    section{
+        width: 500px;
+        margin: 60px;
+        padding: 20px;
+        border-radius: 15px;
+}
+
+}
