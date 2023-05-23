@@ -2,11 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+
 }
 
 body {
-    overflow: hidden;
     background-color: #DCE5E2;
     color: #4D7373;
 }
@@ -20,14 +19,17 @@ main h1,
 main h2 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
+    font-size: 18pt;
     font-style: normal;
     text-transform: uppercase;
+
 }
 
 main p, button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 12pt;
 }
 
 #frontVidContainer video,
@@ -37,6 +39,55 @@ main p, button {
 #shop img,
 #roomPaintings img {
     width: 100%;
+}
+
+/*TOPVIDEO*/
+#frontVidContainer{
+    position: relative;
+}
+#frontVidContainer h1{
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 54px;
+
+    color:#DCE5E2;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer button{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+    padding:10px 30px 10px 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer button:hover{
+    padding:10px 30px 10px 30px;
+    background-color: #F59C6B;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer > div{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #F59C6B;
+    font-size: 50px;
+
 }
 
 
