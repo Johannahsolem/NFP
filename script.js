@@ -17,3 +17,5 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+let image = document.getElementsById('stemning');
+new simpleParallax(image);

@@ -1,44 +1,98 @@
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+
 }
 
-main{
+body {
     background-color: #DCE5E2;
+    color: #4D7373;
 }
 
-main h1, main h2{
+img {
+    max-width: 100%;
+}
+
+
+main h1,
+main h2 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
+    font-size: 18pt;
     font-style: normal;
     text-transform: uppercase;
+
 }
 
-main p{
+main p, button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 12pt;
 }
 
+#frontVidContainer video,
+#om img,
+#roomTat img,
+#stemningsBilleder,
+#shop img,
+#roomPaintings img {
+    width: 100%;
+}
+
+/*TOPVIDEO*/
 #frontVidContainer{
-    width:100%;
+    position: relative;
+}
+#frontVidContainer h1{
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 54px;
+
+    color:#DCE5E2;
+    text-transform: uppercase;
+
 }
 
-#frontVidContainer video{
-    width:100%;
+#frontVidContainer button{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+    padding:10px 30px 10px 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+
 }
 
-#om img, #roomTat img{
-    width:100%;
+#frontVidContainer button:hover{
+    padding:10px 30px 10px 30px;
+    background-color: #F59C6B;
+    text-transform: uppercase;
+
 }
 
-#shop, #roomPaintings{
-    width:30%;
+#frontVidContainer > div{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #F59C6B;
+    font-size: 50px;
+
 }
 
-#roomTat{
+
+/*PARALLAX*/
+#roomTat {
     /*img used*/
     background-image: url(images/portrætter/bigpic.JPG);
 
@@ -52,3 +106,93 @@ main p{
     background-size: cover;
 }
 
+#stemningsBilleder {
+    /*img used*/
+    background-image: url(images/lokale/stemningsbilleder.png);
+
+    /*specific height*/
+    min-height: 500px;
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*OM OS SEKTION*/
+#om {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    padding: 10% 10% 10% 10%;
+
+}
+
+
+#om>div:nth-child(2) h1 {
+    padding-bottom: 2rem;
+}
+
+#om>div:nth-child(2) p {
+    color:#4D7373;
+    line-height: 1.5em;
+}
+
+button{
+    margin-top:1rem;
+    padding:2%;
+    border-radius: 10px;
+
+    color:#F59C6B;
+    background-color: #DCE5E2;
+    border:1px solid #F59C6B;
+
+    transition: .5s ease-in-out;
+}
+
+button:hover{
+    color:#DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+
+    cursor:pointer;
+}
+
+#shop,
+#roomPaintings {
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(77, 115, 115, 1);
+}
+
+#shop img,
+#roomPaintings img {
+    border-radius: 20px;
+    transform: scale(1);
+    opacity: .6;
+
+    transition: 1s ease-in-out;
+}
+
+#shop img:hover,
+#roomPaintings img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+
+}
+
+#shop {
+    z-index: 1;
+}
+
+#roomPaintings {
+    z-index: 0;
+    position: relative;
+    left: 15em;
+    bottom: 5em;
+}
