@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+body{
+  background-color: #DCE5E2;
+}
+
 /*RESPONSIV*/
 /*MOBIL*/
 @media screen and (max-width:910px) {
@@ -67,16 +71,8 @@
       margin-left: 25px;
   }
 
-  .artistenParentElement {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
   .artisten {
     display: inline-block;
     background-color: #DCE5E2;
-    padding: 1rem 1rem;
-    vertical-align: middle;
   }
 }
