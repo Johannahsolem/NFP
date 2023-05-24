@@ -9,7 +9,7 @@ const stopTime = setTimeout(changeTxt, 4000)
 
 
 
-//VELKOMST AFHÆNGIG AF TID PÅ DAGEN
+//VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php 
 function greetMe(){
     const time = new Date().getHours();
     let greeting;
