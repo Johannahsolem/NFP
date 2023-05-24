@@ -12,6 +12,7 @@ function clickFunc(){
     window.location="kontakt.html";
 }
 
+//Tryk på pil og scroll ned til om sektion
 function scrollDown(){
     window.location="#om";
 }
