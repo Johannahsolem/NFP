@@ -5,7 +5,7 @@ const txtContainer = document.getElementsByClassName("artistTxtContainer");
 const artistMere = document.getElementsByClassName("artistMere");
 
 const timeOut = setTimeout(greetMe);
-const stopTime = setTimeout(changeTxt, 4000)
+const stopTime = setTimeout(changeTxt, 4000);
 
 //Tryk på kontaktknap fører til kontaktsiden
 function clickFunc(){
@@ -63,45 +63,6 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-
-
-/*TODO: KAJFLDFJLDAJF VEND TILBGE TIL DET HER
-function hover(){
-    artistMere.style.display = 'block';
-    txtContainer.style.display = 'none';
-}
-
-function standard(){
-    artistMere.style.display = 'none';
-    txtContainer.style.display = 'block';
-}
-
-indivArtist.addEventListener("mouseover", hover);
-indivArtist.addEventListener("mouseout", standard);
-*/
-
-
-
-
-
-
-/*
-indivArtist.onmouseover = function(){
-    mouseOver();
-};
-
-indivArtist.onmouseout = function(){
-    mouseOut();
-};
-
-function mouseOver(){
-    txtContainer.style.visibility = 'hidden';
-}
-
-function mouseOut(){
-    txtContainer.style.visibility = 'visible';
-}
-*/
 
 
 
