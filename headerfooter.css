@@ -4,6 +4,13 @@
     padding: 0;
   }
 
+a{
+    font-family: "espiritu", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
 /*MOBIL*/
 @media screen and (max-width:910px) {
 

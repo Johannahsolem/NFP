@@ -1,40 +1,110 @@
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+
 }
 
-main{
+body {
     background-color: #DCE5E2;
+    color: #4D7373;
+    overflow-x: hidden;
 }
 
-main h1, main h2{
+img {
+    max-width: 100%;
+}
+
+
+main h1 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
+    font-size: 2em;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+main h2{
+    font-family: "espiritu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
     font-style: normal;
     text-transform: uppercase;
 }
 
-main p{
+main p,
+button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1em;
 }
 
-#frontVidContainer video, #om img, #roomTat img, #stemningsBilleder{
-    width:100%;
+#frontVidContainer video,
+#om img,
+#roomTat img,
+#stemningsBilleder,
+#shop img,
+#roomPaintings img {
+    width: 100%;
 }
 
-
-#shop, #roomPaintings{
-    width:30%;
+/*TOPVIDEO*/
+#frontVidContainer {
+    position: relative;
 }
+
+#frontVidContainer h1 {
+    position: absolute;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 54px;
+
+    color: #DCE5E2;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer button {
+    position: absolute;
+
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer button:hover {
+    padding: 10px 30px 10px 30px;
+    background-color: #F59C6B;
+    text-transform: uppercase;
+
+}
+
+#frontVidContainer>div {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #F59C6B;
+    font-size: 50px;
+
+}
+
 
 /*PARALLAX*/
-#roomTat{
+#roomTat {
     /*img used*/
-    background-image: url(images/portrætter/bigpic.JPG);
+    background-image: url(images/lokale/tatcloseup.png);
 
     /*specific height*/
     min-height: 500px;
@@ -46,19 +116,245 @@ main p{
     background-size: cover;
 }
 
-#stemningsBilleder{
-        /*img used*/
-        background-image: url(images/lokale/stemningsbilleder.png);
+#stemningsBilleder {
+    /*img used*/
+    background-image: url(images/lokale/stemningsbilleder.png);
 
-        /*specific height*/
-        min-height: 500px;
-    
-        /*parallax scrolling effect*/
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    /*specific height*/
+    min-height: 500px;
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*OM OS SEKTION*/
+#om {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10%;
+
 }
 
 
+#om>div:nth-child(2) h1, #besked h1 {
+    padding-bottom: 2rem;
+}
 
+#om>div:nth-child(2) p, #besked p {
+    color: #4D7373;
+    line-height: 1.5em;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 2% 4% 2% 4%;
+    border-radius: 10px;
+
+    color: #F59C6B;
+    background-color: #DCE5E2;
+    border: 1px solid #F59C6B;
+
+    transition: .5s ease-in-out;
+}
+
+button:hover {
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+
+    cursor: pointer;
+}
+
+#shop,
+#roomPaintings {
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(77, 115, 115, 1);
+}
+
+#shop img,
+#roomPaintings img {
+    border-radius: 20px;
+    transform: scale(1);
+    opacity: .6;
+
+    transition: 1s ease-in-out;
+}
+
+#shop img:hover,
+#roomPaintings img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+
+}
+
+#shop {
+    z-index: 1;
+}
+
+#roomPaintings {
+    z-index: 0;
+    position: relative;
+    left: 15em;
+    bottom: 5em;
+}
+
+/*ARTISTERNE*/
+#artister {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10%;
+    padding-top:12%;
+
+    text-align: center;
+    height:5%;
+
+
+    background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-size: cover;
+
+}
+
+#artistKort div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 40px 30px 10px 30px;
+
+    width:100%;
+
+}
+
+#artistKort {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.artist img, .placeholder img {
+    position: relative;
+    border-radius: 30px 30px 10px 10px;
+    z-index: 0;
+    margin: 10px;
+    width: 100%;
+}
+
+.artist, .placeholder{
+    opacity:1;
+    transition: 1s ease-in-out;
+}
+
+.artist:hover, .placeholder:hover{
+
+    opacity:0.9;
+    transition: 1s ease-in-out;
+}
+
+.placeholder {
+    position:relative;
+
+
+    border-radius: 30px 30px 10px 10px;
+    z-index: 0;
+}
+
+.artistTxtContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: 120px;
+    text-align: center;
+
+    border-radius: 30px 30px 10px 10px;
+    height:148px;
+
+
+    background-color: rgba(77, 115, 115, 0.6);
+    color: #DCE5E2;
+
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+/*TODO: FIKSSSS DET HER*/
+.artistTxtContainer:hover {
+    position: absolute;
+    bottom: 305px;
+    text-align: center;
+
+    border-radius: 30px 30px 10px 10px;
+
+    height:248px;
+
+
+    background-color: rgba(77, 115, 115, 0.9);
+    color: #DCE5E2;
+
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.artistTxtContainer h2 {
+    padding: 20px;
+    margin-bottom:1%;
+
+}
+
+.artistTxtContainer p {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #DCE5E2;
+}
+
+/*KONTAKT OS SEKTION*/
+#besked{
+    background-image: url(images/lokale/bgplante.JPG), url(images/pynt/bg.png);
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-size: cover;
+
+    padding:15%;
+
+    text-align: center;
+}
+
+#besked p{
+    padding:0% 10% 0% 10%;
+}
+
+#besked > button {
+    margin-top: 2em;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+
+    color: #F59C6B;
+    background-color: transparent;
+    border: 1px solid #F59C6B;
+
+    transition: .5s ease-in-out;
+}
+
+#besked > button:hover {
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+
+    cursor: pointer;
+}

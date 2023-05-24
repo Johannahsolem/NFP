@@ -13,7 +13,7 @@
 
     <title>Nord for Paradis</title>
 
-    <!--Google og Adobe Fonts-->
+    <!--GOOGLE OG ADOBE FONTS-->
     <!--Overskrifter-->
     <link rel="stylesheet" href="https://use.typekit.net/bia2gdi.css">
     <!--Brødtekst-->
@@ -23,20 +23,24 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!--Font Awesome-->
+    <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/60cddcb918.js" crossorigin="anonymous"></script>
 
-    <!--Styles-->
+    <!--STYLES-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="headerfooter.css">
     <!--<link rel="stylesheet" href="responsive.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!--SCRIPT-->
     <script src="script.js" defer></script>
 
-    <!--Favicon-->
+
+    <!--FAVICON-->
 
 
 </head>
+
 <body>
     <header>
         <!--<nav id="navMobile">
@@ -58,21 +62,32 @@
 
     <main>
         <div id="frontVidContainer">
+            <h1 data-aos="zoom-in" id="hello"></h1>
+            <h1 id="nfp">Nord <sup style="font-size:18pt;">for</sup> <br> Paradis</h1>
+            <!--TODO: javascript for tryk a knap--><button  onclick="contact" data-aos="zoom-in-up">Kontakt</button>
+            <div>&#9660;</div>
+
             <video src="images/NFP2.mp4" type="mp4" autoplay loop muted></video>
         </div>
 
         <section id="om">
-            <div id="shop">
-                <img src="images/butik/front.JPG" alt="Butik front">
-            </div>
-            <div id="roomPaintings">
-                <img src="images/lokale/lokale.JPG" alt="Billeder på væggen">
+            <div>
+                <div data-aos="fade-right" id="shop">
+                    <img id="test" src="images/butik/front.JPG" alt="Butik front">
+                </div>
+                <div data-aos="fade-right" data-aos-delay="100" id="roomPaintings">
+                    <img src="images/lokale/lokale.JPG" alt="Billeder på væggen">
+                </div>
             </div>
 
 
             <div>
-                <h1>Startskuddet</h1>
-                <p>Hvis du vil vide mere om os og vores visioner for vores lille perle af en biks...</p>
+                <h1 data-aos="fade-left">Startskuddet</h1>
+                <p data-aos="fade-left" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. </p>
+                <button data-aos="fade-left" data-aos-delay="200">Læs mere</button>
             </div>
         </section>
 
@@ -81,71 +96,66 @@
         <!--<div id="test">
             <img class="parallax" src="images/portrætter/bigpic.JPG" alt="Rass tatoverer">
         </div>-->
-        
 
-        <section>
-            <h1>Artister</h1>
 
-            <div>
-                <img src="" alt="">
-                <div class="artistTxtContainer">
-                    <h2>Rass</h2>
-                    <p>Beskrivelse af deres tatoveringsstil</p>
+        <section id="artister">
+            <h1 data-aos="fade-down">Artister</h1>
+
+            <div id="artistKort">
+                <div data-aos="fade-up">
+                    <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
+                    
+                    <div class="artistTxtContainer" >
+                        <h2>Rass</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+    
                 </div>
-
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <div class="artistTxtContainer">
-                    <h2>Sebastian</h2>
-                    <p>Beskrivelse af deres tatoveringsstil</p>
+    
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
+                    
+                    <div class="artistTxtContainer">
+                        <h2>Sebastian</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+    
                 </div>
-
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <div class="artistTxtContainer">
-                    <h2>Klara</h2>
-                    <p>Beskrivelse af deres tatoveringsstil</p>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="placeholder"><img src="images/portrætter/placeholder.png" alt="Placeholder"></div>
+                    <div class="artistTxtContainer">
+                        <h2>Navn</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+    
                 </div>
-
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <div class="artistTxtContainer">
-                    <h2>Navn</h2>
-                    <p>Beskrivelse af deres tatoveringsstil</p>
+    
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="placeholder"><img src="images/portrætter/placeholder.png" alt="Placeholder"></div>
+                    <div class="artistTxtContainer">
+                        <h2>Navn</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+    
                 </div>
-
+    
             </div>
-
-            <div>
-                <img src="" alt="">
-                <div class="artistTxtContainer">
-                    <h2>Navn</h2>
-                    <p>Beskrivelse af deres tatoveringsstil</p>
-                </div>
-
-            </div>
+            
 
         </section>
 
         <div id="stemningsBilleder"></div>
 
-        <section>
-            <h1>Smid en besked</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <section id="besked">
+            <h1 data-aos="fade-down">Smid en besked</h1>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
-            <button></button>
+            <button data-aos="fade-up" data-aos-delay="300">Kontakt os</button>
         </section>
-
-
     </main>
 
     <footer>
@@ -177,7 +187,14 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+        });
+    </script>
 </body>
+
+
 
 </html>
