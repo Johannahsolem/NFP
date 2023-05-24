@@ -104,7 +104,7 @@ button {
 /*PARALLAX*/
 #roomTat {
     /*img used*/
-    background-image: url(images/lokale/tatcloseup.png);
+    background-image: url(images/lokale/rasshygge2.jpg);
 
     /*specific height*/
     min-height: 500px;
@@ -118,10 +118,11 @@ button {
 
 #stemningsBilleder {
     /*img used*/
-    background-image: url(images/lokale/stemningsbilleder.png);
+    background-image: url(images/lokale/lokale3.jpg);
 
     /*specific height*/
-    min-height: 500px;
+    min-height: 600px;
+
 
     /*parallax scrolling effect*/
     background-attachment: fixed;
@@ -135,14 +136,18 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    justify-content: space-evenly;
+    
     padding: 10%;
 
 }
 
+#om>div:nth-child(2){
+    padding-left:30%;
+}
 
 #om>div:nth-child(2) h1, #besked h1 {
-    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #om>div:nth-child(2) p, #besked p {
@@ -151,7 +156,7 @@ button {
 }
 
 button {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 2% 4% 2% 4%;
     border-radius: 10px;
 
@@ -173,7 +178,9 @@ button:hover {
 #shop,
 #roomPaintings {
     position: relative;
-    width: 50%;
+
+
+    width: 120%;
     border-radius: 20px;
     overflow: hidden;
     background-color: rgba(77, 115, 115, 1);
@@ -183,8 +190,8 @@ button:hover {
 #roomPaintings img {
     border-radius: 20px;
     transform: scale(1);
-    opacity: .6;
-
+    opacity: 1;
+    width: 100%;
     transition: 1s ease-in-out;
 }
 
@@ -196,6 +203,7 @@ button:hover {
 }
 
 #shop {
+    top:3em;
     z-index: 1;
 }
 
@@ -203,7 +211,7 @@ button:hover {
     z-index: 0;
     position: relative;
     left: 15em;
-    bottom: 5em;
+    bottom: 2em;
 }
 
 /*ARTISTERNE*/
@@ -232,7 +240,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
 
-    margin: 40px 30px 10px 30px;
+    margin: 50px 30px 20px 30px;
 
     width:80%;
 
@@ -259,7 +267,6 @@ button:hover {
     position: relative;
     border-radius: 30px 30px 10px 10px;
     z-index: 0;
-    margin: 10px;
     width: 100%;
 }
 
@@ -281,6 +288,7 @@ button:hover {
 }
 
 .artistMere{
+    display: none;
     position: relative;
     bottom:150px;
 
