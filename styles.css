@@ -5,6 +5,12 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     background-color: #DCE5E2;
     color: #4D7373;
@@ -91,17 +97,23 @@ button {
 
 }
 
-#frontVidContainer>div {
+#ikon {
     position: absolute;
-    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     color: #F59C6B;
-    font-size: 50px;
+    font-size: 40px;
+
+    animation: bounce 3s infinite;
 
 }
 
+@keyframes bounce{
+    0%{top:85%;}
+    50%{top:89%;}
+    100%{top:85%;}
+}
 
 /*PARALLAX*/
 #roomTat {
@@ -140,11 +152,12 @@ button {
     align-items: center;
     justify-content: space-evenly;
     
-    padding: 10%;
+    padding: 5% 10% 5% 10%;
 
 }
 
 #om>div:nth-child(2){
+    width:170%;
     padding-left:30%;
 }
 
@@ -242,10 +255,27 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    perspective: 1000px;
 
     margin: 50px 30px 20px 30px;
 
     width:80%;
+
+    transition:.5s ease-in-out;
+
+}
+
+#artistKort div:hover .artistTxtContainer{
+    display:none;
+}
+
+#artistKort div:hover .artistMere{
+    display:block;
+}
+
+.artist:hover{
+    transform-style: preserve-3d;
+    transform: rotateX(25deg);
 
 }
 
@@ -253,10 +283,6 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: row;
-
-    transition:1s ease-in-out;
-
-
 }
 
 #artistKort:hover {
@@ -282,38 +308,23 @@ button:hover {
 }
 
 .artistTxtContainer {
+    display:block;
     position: absolute;
     text-align: center;
 
-
     color:#4D7373;
+
+    transition:.5s ease-in-out;
 
 }
 
 .artistMere{
     display:none;
     position: relative;
-    bottom:150px;
+    transition:.5s ease-in-out;
 
+    padding:3% 6% 3% 6%;
 }
-
-/*TODO: FIKSSSS DET HER
-.artistTxtContainer:hover {
-    position: absolute;
-    bottom: 305px;
-    text-align: center;
-
-    border-radius: 30px 30px 10px 10px;
-
-    height:248px;
-
-
-    background-color: rgba(77, 115, 115, 0.9);
-    color: #DCE5E2;
-
-    transition: 1s ease-in-out;
-    cursor: pointer;
-}*/
 
 .artistTxtContainer p {
     padding: 20px;
@@ -322,6 +333,7 @@ button:hover {
 
     color: #4D7373;
 }
+
 
 /*KONTAKT OS SEKTION*/
 #besked{

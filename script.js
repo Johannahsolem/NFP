@@ -12,6 +12,10 @@ function clickFunc(){
     window.location="kontakt.html";
 }
 
+function scrollDown(){
+    window.location="#om";
+}
+
 //VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php 
 function greetMe(){
     const time = new Date().getHours();
@@ -73,7 +77,10 @@ function standard(){
 
 indivArtist.addEventListener("mouseover", hover);
 indivArtist.addEventListener("mouseout", standard);
-/*
+*/
+
+
+
 
 
 
