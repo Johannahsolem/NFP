@@ -10,7 +10,6 @@
 /*Big photo*/
   .bigphoto img{
 width: 100%;
-height: 500px;
   }
 
   /*Overskrift*/
@@ -57,21 +56,22 @@ height: 500px;
   }
 
   .button{
-    color:#4D7373;
+    margin-top: 2em;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    color: #F59C6B;
+    background-color: transparent;
+    border: 1px solid #F59C6B;
+    transition: .5s ease-in-out;
     text-decoration: none;
-    text-align: center;
-    background-color: #F59C6B;
-    border: none;
-    padding: 10px 20px;
-    margin: 4px 2px;
-    border-radius: 16px;
   }
   
   /*Hover effekt på knappen*/
   .button:hover{
-    color: #F59C6B;
-    background-color: #4D7373;
-    transition: 0.5s;
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 1px solid #F59C6B;
+    cursor: pointer;
   }
 
   /*Billede galleri, styling og hover effekt*/
@@ -99,7 +99,7 @@ height: 500px;
   }
 /*Teksten på baggrunden*/
   .bg-text {
-    color: #F59C6B;
+    color: #4D7373;
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -119,7 +119,7 @@ height: 500px;
     -webkit-filter: blur(8px);
     height: 800px;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
   }
 
   .bg-text button{
@@ -129,4 +129,16 @@ height: 500px;
   .knap{
     display: flex;
     justify-content: center;
+  }
+
+  /*Reveal effekt*/
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
   }
