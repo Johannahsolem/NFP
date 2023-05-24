@@ -7,7 +7,10 @@ const artistMere = document.getElementsByClassName("artistMere");
 const timeOut = setTimeout(greetMe);
 const stopTime = setTimeout(changeTxt, 4000)
 
-
+//Tryk på kontaktknap fører til kontaktsiden
+function clickFunc(){
+    window.location="kontakt.html";
+}
 
 //VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php 
 function greetMe(){
@@ -57,7 +60,7 @@ window.addEventListener("scroll", reveal);
 
 
 
-//TODO: KAJFLDFJLDAJF VEND TILBGE TIL DET HER
+/*TODO: KAJFLDFJLDAJF VEND TILBGE TIL DET HER
 function hover(){
     artistMere.style.display = 'block';
     txtContainer.style.display = 'none';
@@ -70,6 +73,8 @@ function standard(){
 
 indivArtist.addEventListener("mouseover", hover);
 indivArtist.addEventListener("mouseout", standard);
+/*
+
 
 
 /*
