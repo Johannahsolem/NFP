@@ -19,20 +19,17 @@ footer h3{
     font-family: "espiritu", sans-serif;
 }
 
+
 /*MOBIL*/
 @media screen and (max-width:910px) {
 
   /*HEADER*/
-  .navlaptop {
+  #navLaptop {
       display: none;
   }
 
-  .navmobil {
+  #navMobile {
       display: block;
-  }
-
-  .navmobil a {
-    text-decoration: none;
   }
 
   header img {
@@ -42,54 +39,29 @@ footer h3{
       width: 20%;
       margin-top: 5px;
       margin-left: 20px;
+  }
 
+  #Burger{
+    width: 60%;
+    position: relative;
+    float: right;
   }
 
   /*FOOTER*/
-  footer>section {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      padding: 8%;
+  footer{
+    display: flex;
+    padding-bottom: 30px;
+  }
+  
+  footer h3{
+    font-size: 12pt;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  footer p{
+    font-size: 8pt;
   }
 
-
-  /*FOOTER ADRESSE OG TLF OG ÅBNINGSTIDER*/
-  .adresse-tlf {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-right: 50px;
-  }
-
-  footer .tlf a {
-      text-decoration: none;
-      color: #CEA948;
-  }
-
-  .adresse-åbning {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-  }
-
-  .adresse-åbning h2 {
-      font-size: 12pt;
-  }
-
-  .adresse-åbning p {
-      line-height: 1.2;
-      font-size: small;
-  }
-
-  /*ÅBNINGSTIDER LISTE*/
-  footer ul li {
-      font-family: 'Arsenal', sans-serif;
-      font-size: x-small;
-      line-height: 1.5;
-  }
 }
 
 
@@ -112,9 +84,10 @@ header img{
     font-size: 16pt;
     margin-top: 50px;
     color: #95C3B4;
+    float: right;
 }
 
-header #navmobil {
+header #navMobile {
     display: none;
 }
 
@@ -133,7 +106,6 @@ header #navmobil {
   }
 
   footer p{
-
     line-height: 22px;
   }
 
