@@ -22,10 +22,12 @@ function greetMe(){
 
     const time = new Date().getHours();
     let greeting;
-    if (time < 10) {
-        greeting = "Godmorgen!";
+    if (time < 06) {
+        greeting = "Godnat!"
+    } else if (time < 10){
+        greeting = "Godmorgen!"
     } else if (time < 12) {
-        greeting = "Godmiddag!";
+        greeting = "Godmiddag!"
     } else if (time < 18) {
         greeting = "Godeftermiddag!"
     }else{
@@ -34,16 +36,16 @@ function greetMe(){
 
     nfp.style.display ="none";
     nfp.style.animationName = "fadeIn";
-    
+
     hello.innerHTML = greeting;
     hello.style.animationName = "zoomIn";
+
 
 
 }
 
 function changeTxt(){
-    nfp.style.left = "50%";
-
+    
     nfp.style.display ="block";
     hello.style.display = "none";
 }

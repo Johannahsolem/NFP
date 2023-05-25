@@ -1,60 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    max-width: 100%;
-}
-
-body {
-    background-color: #DCE5E2;
-    color: #4D7373;
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-}
-
-
-main h1 {
-    font-family: "espiritu", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    font-style: normal;
-    text-transform: uppercase;
-
-}
-
-main h2 {
-    font-family: "espiritu", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    font-style: normal;
-    text-transform: uppercase;
-}
-
-main p,
-button {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 10pt;
-    line-height: 1.5em;
-    color: #4D7373;
-}
-
-#frontVidContainer video,
-#om img,
-#roomTat img,
-#stemningsBilleder,
-#shop img,
-#roomPaintings img {
+video,
+img,
+#stemningsBilleder {
     width: 100%;
 }
 
@@ -114,12 +60,23 @@ button {
     }
 }
 
-#hello,
+#hello{
+    position: absolute;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+
+    color: #DCE5E2;
+    text-transform: uppercase;
+}
+
 #nfp {
     position: absolute;
 
     top: 40%;
-    left: 39%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 54px;
 
@@ -139,9 +96,14 @@ button {
     }
 }
 
-@keyframes fadeIn{
-    0%{opacity: 0}
-    100%{opacity:1}
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 
 }
 
@@ -206,20 +168,8 @@ button {
     padding: 1.5% 4% 1.5% 4%;
     border-radius: 10px;
 
-    color: #F59C6B;
-    background-color: transparent;
-    border: 1px solid #F59C6B;
-
     transition: .5s ease-in-out;
 
-}
-
-button:hover {
-    color: #DCE5E2;
-    background-color: #F59C6B;
-    border: 1px solid transparent;
-
-    cursor: pointer;
 }
 
 #shop,
@@ -338,7 +288,7 @@ button:hover {
 
 .indivArtist:hover .artist img,
 .indivArtist:hover .artist h2 {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .indivArtist:hover .artistMere {
@@ -399,18 +349,4 @@ button:hover {
     margin-top: 2em;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
-
-    color: #F59C6B;
-    background-color: transparent;
-    border: 1px solid #F59C6B;
-
-    transition: .5s ease-in-out;
-}
-
-#besked>button:hover {
-    color: #DCE5E2;
-    background-color: #F59C6B;
-    border: 1px solid transparent;
-
-    cursor: pointer;
 }

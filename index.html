@@ -28,7 +28,9 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="generalstyles.css">
     <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="artistgalleri.css">
     <!--<link rel="stylesheet" href="responsive.css">-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -44,26 +46,24 @@
 <body>
     <header>
         <nav id="navMobile">
-        <div id="Logo">
-        <a href="index.html"><img src="images/logoplaceholder3.png" alt="NFP logo"></a>
-        </div>
+            <div id="logo">
+                <a href="index.html"><img src="images/misc/NFP-logolys-mobil.png" alt="NFP logo"></a>
+            </div>
 
-        <div id="Burger">
-        <a href="burger.html"><img src="images/burger.png" alt="Burgermenu"></a>
-        </div>
+            <div id="burger">
+                <a href="dropdown.html"><i class="fa-solid fa-bars fa-lg" style="color: #dce5e2;"></i></a>
+            </div>
         </nav>
 
         <nav id="navLaptop">
-            <div id="Logo">
-                <a href="index.html"><img src="images/logoplaceholder3.png" alt="NFP logo"></a>
-            </div>
+            <a class="nav" href="omos.html">Om os</a>
+            <a class="nav" href="artister.html">Artister</a>
 
-            <div id="menu">
-                <a href="omos.html">OM OS</a>
-                <a href="artister.html">ARTISTER</a>
-                <a href="kontakt.html">KONTAKT</a>
-                <a href="faq.html">FAQ</a>
-            </div>
+            <div id="logo"><a href="index.html"><img src="images/misc/NFP-logolys-laptop.png" alt="NFP logo"></a></div>
+
+            <a class="nav" href="kontakt.html">Kontakt</a>
+            <a class="nav" href="faq.html">faq</a>
+
         </nav>
     </header>
 
@@ -71,9 +71,10 @@
     <main>
         <div id="frontVidContainer">
             <h1 id="hello"></h1>
-            <h1 id="nfp">Nord <sup style="font-size:18pt;">for</sup> <br> Paradis</h1>
+            <h1 id="nfp" style="display:none;">Nord <sup style="font-size:18pt;">for</sup> <br> Paradis</h1>
             <button type="button" value="register" onclick="clickFunc()" data-aos="zoom-in-up">Kontakt</button>
-            <div id="ikon" onclick="scrollDown()">&#9660;</div>
+            <div id="ikon" onclick="scrollDown()"><i class="fa-solid fa-caret-down"
+                    style="color: #f59c6b; cursor:pointer;"></i></div>
 
             <video src="images/NFP2.mp4" type="mp4" autoplay loop muted></video>
         </div>
@@ -108,13 +109,13 @@
                     <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
                     <button class="artistMere">Se mere</button>
                     <div class="artistTxtContainer">
-                        
+
                         <h2>Rass</h2>
                         <p>Rass er meget inspireret af den mere Old School-stilart, som igen er på mode. <br> Han er dog
                             aldrig bange for en udfordring, så smid gerne en besked og hør mere om mulighederne.</p>
                     </div>
 
-                    
+
 
                 </div>
 
@@ -122,14 +123,14 @@
                     <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
                     <button class="artistMere">Se mere</button>
                     <div class="artistTxtContainer">
-                        
+
                         <h2>Sebastian</h2>
                         <p>Sebastians stil er, ligesom Rass’, også inspireret af den Old School og traditionelle stilart
                             med stærke farver og mørke skygger. Detaljen i Sebastians håndværk er som ingen anden.
                         </p>
                     </div>
 
-                    
+
 
                 </div>
 
@@ -139,13 +140,13 @@
                     </div>
                     <button class="artistMere">Se mere</button>
                     <div class="artistTxtContainer">
-                        
+
                         <h2>Klara</h2>
                         <p>Klara arbejder hovedsageligt med fineline, hvor hun skaber feminine tatoveringer med lette
                             skygger.</p>
                     </div>
 
-                    
+
 
                 </div>
 
@@ -162,37 +163,41 @@
             <p data-aos="fade-up">Vi elsker at høre fra jer! <br> Om det er et spørgsmål, booking af tid eller et
                 billede af jeres helede tatoveringer. Hop ind på vores kontaktside, og se hvordan du kontakter os bedst
                 muligt. Du selvfølgelig altid velkommen til at følge med på vores instagram.</p>
-            <button type="button" value="register" onclick="clickFunc()" data-aos="fade-up" data-aos-delay="300">Kontakt
-                os</button>
+            <button type="button" value="register" onclick="clickFunc()" data-aos="fade-up" data-aos-delay="150">Kontakt</button>
         </section>
     </main>
 
     <footer>
         <div class="åbningsTiderFooter">
             <h3>Åbningstider</h3>
-            <p>Hverdage 10-15</p>
+            <p>Hverdage kl. 10-15</p>
         </div>
 
         <div class="kontaktFooter">
             <h3>Kontakt</h3>
             <p>nfp@tattoo.com</p>
-            <p>Tlf.: 2615 4712</p>
+            <p>Tlf.<a href="tel:+4526154712">+45 2615 4712</a></p>
             <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
             <p>CVR: 43619144</p>
         </div>
 
-        <div id="footerLogo">
-            <img src="images/logoplaceholder2.png" alt="footerlogo">
+
+        <div>
+            <div class="harDuSpørgsmålFooter">
+                <h3>Har du spørgsmål?</h3>
+                <p>Se gerne om svaret på dit spørgsmål står i vores FAQ.</p>
+                <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
+            </div>
+            <div id="soMe">
+                <a href="https://www.instagram.com/nordforparadis/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/people/Nord-for-Paradis-Tattoo/100088443669315/"><i class="fa-brands fa-square-facebook fa-3x"></i></i></a>
+            </div>
         </div>
 
-        <div class="harDuSpørgsmålFooter">
-            <h3>Har du spørgsmål?</h3>
-            <p>Se gerne om svaret på dit spørgsmål står i vores FAQ.</p>
-            <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
+        <div id="footerLogo">
+            <img src="images/misc/NFP-logolys-laptop.png" alt="footerlogo">
         </div>
-        <div id="soMeMedier">
-            <a href="#"><i class="fa-brands fa-square fa-x3"></i></a>
-        </div>
+
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

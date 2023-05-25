@@ -1,49 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404</title>
 
-      <!--Styles-->
-      <link rel="stylesheet" href="kontaktstyles.css" />
+    <!--Styles-->
+    <link rel="stylesheet" href="kontaktstyles.css" />
 
-      <!--Script-->
-      <script src="script.js" defer></script>
+    <!--Script-->
+    <script src="script.js" defer></script>
 
 </head>
+
 <body>
+    <header>
+        <nav id="navMobile">
+            <div id="logo">
+                <a href="index.html"><img src="images/misc/NFP-logolys-mobil.png" alt="NFP logo"></a>
+            </div>
 
-    <!--Overskrift-->
-    <section class="overskrift">
-        <h2>ERROR 404</h2>
-    </section>
+            <div id="burger">
+                <a href="dropdown.html"><i class="fa-solid fa-bars fa-lg" style="color: #dce5e2;"></i></a>
+            </div>
+        </nav>
 
-    <!--Logo i toppen-->
-    <section class="logokontakt">
-        <img src="images/logo404.png" alt="logo">
-    </section>
-'
-<!--Tekst under logoet-->
-    <section class="tekst">
-        <p>Beklager! Vi er ikke færdige med hele hjemmesiden endnu, men vi lover at det bliver mega fedt! 
+        <nav id="navLaptop">
+            <a class="nav" href="omos.html">Om os</a>
+            <a class="nav" href="artister.html">Artister</a>
 
-            Tag et kig på vores fantastiske artisters gallerier, surf lidt rundt på hjemmesiden og se hvem vi er.
-            Du er velkommen til at ringe eller skrive, hvis du har spørgsmål, ellers tjek vores FAQ. 
-            Håber vi ses i shoppen! </p>
-    </section>
-    
-    <!--Knap/button-->
-    <section class="knap">
-        <a href="index.html" class="button">Tilbage Til Forsiden</a>
-    </section>
+            <div id="logo"><a href="index.html"><img src="images/misc/NFP-logolys-laptop.png" alt="NFP logo"></a></div>
 
-    <!--Kontakt info-->
-    <section class="kontaktinfo">
-        <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p> 
-        <p>nfp@tattoo.dk</p> 
-        <p>+45 26154712</p> 
-    </section>
+            <a class="nav" href="kontakt.html">Kontakt</a>
+            <a class="nav" href="faq.html">faq</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--Overskrift-->
+        <section class="overskrift">
+            <h2>ERROR 404</h2>
+        </section>
+
+        <!--Logo i toppen-->
+        <section class="logokontakt">
+            <img src="images/logo404.png" alt="logo">
+        </section>
+        '
+        <!--Tekst under logoet-->
+        <section class="tekst">
+            <p>Beklager! Vi er ikke færdige med hele hjemmesiden endnu, men vi lover at det bliver mega fedt!
+
+                Tag et kig på vores fantastiske artisters gallerier, surf lidt rundt på hjemmesiden og se hvem vi er.
+                Du er velkommen til at ringe eller skrive, hvis du har spørgsmål, ellers tjek vores FAQ.
+                Håber vi ses i shoppen! </p>
+        </section>
+
+        <!--Knap/button-->
+        <section class="knap">
+            <a href="index.html" class="button">Tilbage Til Forsiden</a>
+        </section>
+
+        <!--Kontakt info-->
+        <section class="kontaktinfo">
+            <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
+            <p>nfp@tattoo.dk</p>
+            <p>Tlf.<a href="tel:+4526154712">+45 2615 4712</a></p>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="åbningsTiderFooter">
+            <h3>Åbningstider</h3>
+            <p>Hverdage kl. 10-15</p>
+        </div>
+
+        <div class="kontaktFooter">
+            <h3>Kontakt</h3>
+            <p>nfp@tattoo.com</p>
+            <p>Tlf.<a href="tel:+4526154712">+45 2615 4712</a></p>
+            <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
+            <p>CVR: 43619144</p>
+        </div>
+
+
+        <div>
+            <div class="harDuSpørgsmålFooter">
+                <h3>Har du spørgsmål?</h3>
+                <p>Se gerne om svaret på dit spørgsmål står i vores FAQ.</p>
+                <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
+            </div>
+            <div id="soMe">
+                <a href="https://www.instagram.com/nordforparadis/"><i
+                        class="fa-brands fa-square-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/people/Nord-for-Paradis-Tattoo/100088443669315/"><i
+                        class="fa-brands fa-square-facebook fa-3x"></i></i></a>
+            </div>
+        </div>
+
+        <div id="footerLogo">
+            <img src="images/misc/NFP-logolys-laptop.png" alt="footerlogo">
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
+
 </html>
