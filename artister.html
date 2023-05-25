@@ -6,31 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artister</title>
 
-    <link rel="stylesheet" href="artister.css" />
+        <!--GOOGLE OG ADOBE FONTS-->
+    <!--Overskrifter-->
+    <link rel="stylesheet" href="https://use.typekit.net/bia2gdi.css">
+    <!--Brødtekst-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/60cddcb918.js" crossorigin="anonymous"></script>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="artister.css"/>
+    <link rel="stylesheet" href="headerfooter.css">
+    <!--<link rel="stylesheet" href="responsive.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--SCRIPT-->
+    <script src="script.js" defer></script>
+
+
+    <!--FAVICON-->
 </head>
 <body>
     <main>
         <img id="artistBigPhoto" src="images/JohannahsPlaceholders/artisterneplaceholder.png" alt="artisterneplaceholder">
     
-    <div class="artistParentElement">
-    <div class="artisten">
-        <img src="images/JohannahsPlaceholders/test.png" alt="test">
-        <h3>Rass Ansø</h3>
-        <p>Her skal der stå en lille tekst om artisten.</p>
-    </div>
+        <section id="artister">
+            <h1 data-aos="fade-down"></h1>
 
-    <div class="artisten">
-        <img src="images/JohannahsPlaceholders/test.png" alt="test">
-        <h3>Rass Ansø</h3>
-        <p>Her skal der stå en lille tekst om artisten.</p>
-    </div>
+            <div id="artistKort">
+                <div data-aos="fade-up" class="indivArtist">
+                    <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
+                    
+                    <div class="artistTxtContainer" >
+                        <h2>Rass</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
 
-    <div class="artisten">
-        <img src="images/JohannahsPlaceholders/test.png" alt="test">
-        <h3>Rass Ansø</h3>
-        <p>Her skal der stå en lille tekst om artisten.</p>
-    </div>
-    </div>
+                    <button class="artistMere">Se mere</button>
+    
+                </div>
+    
+                <div data-aos="fade-up" data-aos-delay="100" class="indivArtist">
+                    <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
+                    
+                    <div class="artistTxtContainer">
+                        <h2>Sebastian</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+
+                    <button class="artistMere">Se mere</button>
+    
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200" class="indivArtist">
+                    <div class="artist"><img src="images/portrætter/klara.png" alt="Klara">
+                    <h2>Coming soon...</h2></div>
+                    <div class="artistTxtContainer">
+                        <h2>Klara</h2>
+                        <p>Beskrivelse af deres tatoveringsstil</p>
+                    </div>
+
+                    <button class="artistMere">Se mere</button>
+    
+                </div>
+    
+    
+            </div>
+            
+
+        </section>
 
     </main>
     
