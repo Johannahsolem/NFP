@@ -92,7 +92,7 @@ button:hover {
     main h1{
         font-family: "espiritu", sans-serif;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1em;
         font-style: normal;
         text-transform: uppercase;
     
@@ -101,7 +101,7 @@ button:hover {
     main h2 {
         font-family: "espiritu", sans-serif;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 0.5em;
         font-style: normal;
         text-transform: uppercase;
     }
@@ -110,14 +110,14 @@ button:hover {
         font-family: 'Be Vietnam Pro', sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 10pt;
+        font-size: 8pt;
         line-height: 1.5em;
         color: #4D7373;
     }
     
     button{
         font-family: 'Be Vietnam Pro', sans-serif;
-        font-size: 10pt;
+        font-size: 8pt;
         font-style: normal;
         font-weight: 300;
     
@@ -129,11 +129,4 @@ button:hover {
     
     }
     
-    button:hover {
-        color: #DCE5E2;
-        background-color: #F59C6B;
-        border: 1px solid transparent;
-    
-        cursor: pointer;
-    }
 }
