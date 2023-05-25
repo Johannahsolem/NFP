@@ -65,14 +65,107 @@ body{
 
 /*LAPTOP*/
 @media screen and (min-width: 910px) {
-  .artisten{
-      padding: 50px;
-      border-radius: 10px;
-      margin-left: 25px;
-  }
+/*ARTISTERNE*/
+#artister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10%;
+  padding-top:12%;
 
-  .artisten {
-    display: inline-block;
-    background-color: #DCE5E2;
-  }
+  text-align: center;
+  height:5%;
+
+
+  background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
+  background-repeat: no-repeat;
+  background-blend-mode:overlay;
+  background-size: cover;
+
+}
+
+#artistKort div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1000px;
+
+  margin: 50px 30px 20px 30px;
+
+  width:80%;
+
+  transition:.5s ease-in-out;
+
+}
+
+#artistKort div:hover .artistTxtContainer{
+  display:none;
+}
+
+#artistKort div:hover .artistMere{
+  display:block;
+}
+
+.artist:hover{
+  transform-style: preserve-3d;
+  transform: rotateX(25deg);
+
+}
+
+#artistKort {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#artistKort:hover {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.artist img{
+  position: relative;
+  border-radius: 30px 30px 10px 10px;
+  z-index: 0;
+  width: 100%;
+}
+
+.artist > h2{
+  color:#DCE5E2;
+  font-size: 30pt;
+
+  position:absolute;
+  top:35%;
+}
+
+.artistTxtContainer {
+  display:block;
+  position: absolute;
+  text-align: center;
+
+  color:#4D7373;
+
+  transition:.5s ease-in-out;
+
+}
+
+.artistMere{
+  display:none;
+  position: relative;
+  transition:.5s ease-in-out;
+
+  padding:3% 6% 3% 6%;
+}
+
+.artistTxtContainer p {
+  padding: 20px;
+
+  text-align: center;
+
+  color: #4D7373;
+}
 }
