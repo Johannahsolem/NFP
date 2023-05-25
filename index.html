@@ -51,12 +51,12 @@
             <div id="Logo">
                 <a href="index.html"><img src="images/logoplaceholder3.png" alt="NFP logo"></a>
             </div>
-            
+
             <div id="menu">
-            <a href="omos.html">OM OS</a>
-            <a href="artister.html">ARTISTER</a>
-            <a href="kontakt.html">KONTAKT</a>
-            <a href="faq.html">FAQ</a>
+                <a href="omos.html">OM OS</a>
+                <a href="artister.html">ARTISTER</a>
+                <a href="kontakt.html">KONTAKT</a>
+                <a href="faq.html">FAQ</a>
             </div>
         </nav>
     </header>
@@ -64,9 +64,9 @@
 
     <main>
         <div id="frontVidContainer">
-            <h1 data-aos="zoom-in" id="hello"></h1>
+            <h1 id="hello"></h1>
             <h1 id="nfp">Nord <sup style="font-size:18pt;">for</sup> <br> Paradis</h1>
-            <button type="button" value="register" onclick="clickFunc()" data-aos="zoom-in-up" >Kontakt</button>
+            <button type="button" value="register" onclick="clickFunc()" data-aos="zoom-in-up">Kontakt</button>
             <div id="ikon" onclick="scrollDown()">&#9660;</div>
 
             <video src="images/NFP2.mp4" type="mp4" autoplay loop muted></video>
@@ -84,11 +84,9 @@
 
 
             <div>
-                <h1 data-aos="fade-left">Startskuddet</h1>
-                <p data-aos="fade-left" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
+                <h1 data-aos="fade-left">Hvor vi startede</h1>
+                <p data-aos="fade-left" data-aos-delay="100">Hvis du vil vide mere om os og vores visioner for vores
+                    lille perle, så hop ind på vores ‘Om os’ side for at lære mere.</p>
                 <button data-aos="fade-left" data-aos-delay="200">Læs mere</button>
             </div>
         </section>
@@ -102,43 +100,52 @@
             <div id="artistKort">
                 <div data-aos="fade-up" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
-                    
-                    <div class="artistTxtContainer" >
+                    <button class="artistMere">Se mere</button>
+                    <div class="artistTxtContainer">
+                        
                         <h2>Rass</h2>
-                        <p>Beskrivelse af deres tatoveringsstil</p>
+                        <p>Rass er meget inspireret af den mere Old School-stilart, som igen er på mode. <br> Han er dog
+                            aldrig bange for en udfordring, så smid gerne en besked og hør mere om mulighederne.</p>
                     </div>
 
-                    <button class="artistMere">Se mere</button>
-    
+                    
+
                 </div>
-    
+
                 <div data-aos="fade-up" data-aos-delay="100" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
-                    
+                    <button class="artistMere">Se mere</button>
                     <div class="artistTxtContainer">
+                        
                         <h2>Sebastian</h2>
-                        <p>Beskrivelse af deres tatoveringsstil</p>
+                        <p>Sebastians stil er, ligesom Rass’, også inspireret af den Old School og traditionelle stilart
+                            med stærke farver og mørke skygger. Detaljen i Sebastians håndværk er som ingen anden.
+                        </p>
                     </div>
 
-                    <button class="artistMere">Se mere</button>
-    
+                    
+
                 </div>
-                
+
                 <div data-aos="fade-up" data-aos-delay="200" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/klara.png" alt="Klara">
-                    <h2>Coming soon...</h2></div>
+                        <h2>Coming soon...</h2>
+                    </div>
+                    <button class="artistMere">Se mere</button>
                     <div class="artistTxtContainer">
+                        
                         <h2>Klara</h2>
-                        <p>Beskrivelse af deres tatoveringsstil</p>
+                        <p>Klara arbejder hovedsageligt med fineline, hvor hun skaber feminine tatoveringer med lette
+                            skygger.</p>
                     </div>
 
-                    <button class="artistMere">Se mere</button>
-    
+                    
+
                 </div>
-    
-    
+
+
             </div>
-            
+
 
         </section>
 
@@ -146,12 +153,11 @@
 
         <section id="besked">
             <h1 data-aos="fade-down">Smid en besked</h1>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <button type="button" value="register" onclick="clickFunc()" data-aos="fade-up" data-aos-delay="300">Kontakt os</button>
+            <p data-aos="fade-up">Vi elsker at høre fra jer! <br> Om det er et spørgsmål, booking af tid eller et
+                billede af jeres helede tatoveringer. Hop ind på vores kontaktside, og se hvordan du kontakter os bedst
+                muligt. Du selvfølgelig altid velkommen til at følge med på vores instagram.</p>
+            <button type="button" value="register" onclick="clickFunc()" data-aos="fade-up" data-aos-delay="300">Kontakt
+                os</button>
         </section>
     </main>
 
@@ -187,7 +193,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration:1000,
+            duration: 1000,
         });
     </script>
 </body>
