@@ -25,16 +25,16 @@ img {
 main h1 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.5em;
     font-style: normal;
     text-transform: uppercase;
 
 }
 
-main h2{
+main h2 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1em;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -44,7 +44,9 @@ button {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1em;
+    font-size: 10pt;
+    line-height: 1.5em;
+    color: #4D7373;
 }
 
 #frontVidContainer video,
@@ -57,21 +59,10 @@ button {
 }
 
 /*TOPVIDEO*/
+
+
 #frontVidContainer {
     position: relative;
-}
-
-#frontVidContainer h1 {
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 54px;
-
-    color: #DCE5E2;
-    text-transform: uppercase;
-
 }
 
 #frontVidContainer button {
@@ -109,10 +100,49 @@ button {
 
 }
 
-@keyframes bounce{
-    0%{top:85%;}
-    50%{top:89%;}
-    100%{top:85%;}
+@keyframes bounce {
+    0% {
+        top: 85%;
+    }
+
+    50% {
+        top: 89%;
+    }
+
+    100% {
+        top: 85%;
+    }
+}
+
+#hello,
+#nfp {
+    position: absolute;
+
+    top: 40%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    font-size: 54px;
+
+    color: #DCE5E2;
+    text-transform: uppercase;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0%)
+    }
+
+    100% {
+        transform: scale(100%)
+    }
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity:1}
+
 }
 
 /*PARALLAX*/
@@ -151,23 +181,24 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
+
     padding: 5% 10% 5% 10%;
 
 }
 
-#om>div:nth-child(2){
-    width:170%;
-    padding-left:30%;
+#om>div:nth-child(2) {
+    width: 170%;
+    padding-left: 30%;
 }
 
-#om>div:nth-child(2) h1, #besked h1 {
+#om>div:nth-child(2) h1,
+#besked h1 {
     margin-bottom: 1.5rem;
 }
 
-#om>div:nth-child(2) p, #besked p {
+#om>div:nth-child(2) p,
+#besked p {
     color: #4D7373;
-    line-height: 1.5em;
 }
 
 button {
@@ -176,7 +207,7 @@ button {
     border-radius: 10px;
 
     color: #F59C6B;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid #F59C6B;
 
     transition: .5s ease-in-out;
@@ -186,7 +217,7 @@ button {
 button:hover {
     color: #DCE5E2;
     background-color: #F59C6B;
-    border: 1px solid #F59C6B;
+    border: 1px solid transparent;
 
     cursor: pointer;
 }
@@ -199,7 +230,7 @@ button:hover {
     width: 120%;
     border-radius: 20px;
     overflow: hidden;
-    background-color: rgba(77, 115, 115, 1);
+    background-color: rgb(77, 115, 115);
 }
 
 #shop img,
@@ -219,7 +250,7 @@ button:hover {
 }
 
 #shop {
-    top:3em;
+    top: 3em;
     z-index: 1;
 }
 
@@ -236,18 +267,22 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:10%;
-    padding-top:12%;
+    padding: 10%;
+    padding-top: 12%;
 
     text-align: center;
-    height:5%;
+    height: 10%;
 
 
     background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
     background-repeat: no-repeat;
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
     background-size: cover;
 
+}
+
+#artister h1 {
+    margin-bottom: 5%;
 }
 
 #artistKort div {
@@ -257,26 +292,57 @@ button:hover {
     align-items: center;
     perspective: 1000px;
 
-    margin: 50px 30px 20px 30px;
+    margin: 10px 30px 20px 30px;
 
-    width:80%;
+    width: 80%;
 
-    transition:.5s ease-in-out;
+    transition: .5s ease-in-out;
 
 }
 
-#artistKort div:hover .artistTxtContainer{
-    display:none;
+
+.indivArtist {
+    position: relative;
+    width: 50%;
 }
 
-#artistKort div:hover .artistMere{
-    display:block;
+.artist img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    border-radius: 30px 30px 10px 10px;
+
 }
 
-.artist:hover{
-    transform-style: preserve-3d;
-    transform: rotateX(25deg);
+.artist {
+    border-radius: 30px 30px 10px 10px;
+    background-color: #4D7373;
+}
 
+.artistMere {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    border-radius: 30px;
+    padding: 4% 6% 4% 6%;
+}
+
+.indivArtist:hover .artist img,
+.indivArtist:hover .artist h2 {
+    opacity: 0.3;
+}
+
+.indivArtist:hover .artistMere {
+    opacity: 1;
 }
 
 #artistKort {
@@ -285,73 +351,51 @@ button:hover {
     flex-direction: row;
 }
 
-#artistKort:hover {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.artist img{
-    position: relative;
-    border-radius: 30px 30px 10px 10px;
-    z-index: 0;
-    width: 100%;
-}
-
-.artist > h2{
-    color:#DCE5E2;
+.artist>h2 {
+    color: #DCE5E2;
     font-size: 30pt;
 
-    position:absolute;
-    top:35%;
+    position: absolute;
+    top: 35%;
 }
 
 .artistTxtContainer {
-    display:block;
+    visibility: visible;
     position: absolute;
     text-align: center;
 
-    color:#4D7373;
+    color: #4D7373;
 
-    transition:.5s ease-in-out;
 
-}
-
-.artistMere{
-    display:none;
-    position: relative;
-    transition:.5s ease-in-out;
-
-    padding:3% 6% 3% 6%;
 }
 
 .artistTxtContainer p {
-    padding: 20px;
-
+    padding-top: 1em;
     text-align: center;
 
     color: #4D7373;
 }
 
 
+
+
 /*KONTAKT OS SEKTION*/
-#besked{
+#besked {
     background-image: url(images/lokale/bgplante.JPG), url(images/pynt/bg.png);
     background-repeat: no-repeat;
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
     background-size: cover;
 
-    padding:15%;
+    padding: 15%;
 
     text-align: center;
 }
 
-#besked p{
-    padding:0% 10% 0% 10%;
+#besked p {
+    padding: 0% 10% 0% 10%;
 }
 
-#besked > button {
+#besked>button {
     margin-top: 2em;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
@@ -363,10 +407,10 @@ button:hover {
     transition: .5s ease-in-out;
 }
 
-#besked > button:hover {
+#besked>button:hover {
     color: #DCE5E2;
     background-color: #F59C6B;
-    border: 1px solid #F59C6B;
+    border: 1px solid transparent;
 
     cursor: pointer;
 }

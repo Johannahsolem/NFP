@@ -19,25 +19,30 @@ function scrollDown(){
 
 //VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php 
 function greetMe(){
+
     const time = new Date().getHours();
     let greeting;
     if (time < 10) {
         greeting = "Godmorgen!";
     } else if (time < 12) {
-        greeting = "God middag!";
+        greeting = "Godmiddag!";
     } else if (time < 18) {
-        greeting = "God eftermiddag!"
+        greeting = "Godeftermiddag!"
     }else{
-        greeting = "God aften!"
+        greeting = "Godaften!"
     };
 
     nfp.style.display ="none";
-    hello.innerHTML = greeting;
+    nfp.style.animationName = "fadeIn";
     
+    hello.innerHTML = greeting;
+    hello.style.animationName = "zoomIn";
+
+
 }
 
 function changeTxt(){
-    nfp.style.paddingBottom ="50px";
+    nfp.style.left = "50%";
 
     nfp.style.display ="block";
     hello.style.display = "none";
