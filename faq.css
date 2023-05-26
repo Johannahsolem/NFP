@@ -16,6 +16,14 @@
     color: #4D7373;
 }
 
+p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  
+  h3{
+    font-family: "espiritu", sans-serif;
+  }
+
   /*RESPONSIV*/
 /*MOBIL*/
 @media screen and (max-width:910px) {

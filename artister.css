@@ -9,6 +9,14 @@
   width: 100%;
 }
 
+p{
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+h2{
+  font-family: "espiritu", sans-serif;
+}
+
 /*RESPONSIV*/
 /*MOBIL*/
 @media screen and (max-width:910px) {
