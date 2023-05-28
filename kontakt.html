@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,112 @@
     <title>Kontakt</title>
 
     <!--Styles-->
-    <link rel="stylesheet" href="kontaktstyles.css" />
+
+    <link rel="stylesheet" href="kontaktstyles.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="generalstyles.css">
+
 
     <!--Script-->
     <script src="script.js" defer></script>
 </head>
-    <!-- Header-->
+
 
 <body>
 
     <header>
+        <!--
+        <nav id="navMobile">
+            <div id="logo">
+                <a href="index.html"><img src="images/misc/NFP-logolys-mobil.png" alt="NFP logo"></a>
+            </div>
 
+            <div id="burger">
+                <a href="dropdown.html"><i class="fa-solid fa-bars fa-lg" style="color: #dce5e2;"></i></a>
+            </div>
+        </nav>-->
+
+        <nav id="navLaptop">
+            <a class="nav" href="omos.html">Om os</a>
+            <a class="nav" href="artister.html">Artister</a>
+
+            <div id="logo"><a href="index.html"><img src="images/misc/NFP-logolys-laptop.png" alt="NFP logo"></a></div>
+
+            <a class="nav" href="kontakt.html">Kontakt</a>
+            <a class="nav" href="faq.html">faq</a>
+
+        </nav>
     </header>
 
-    <!--Logo i toppen-->
-<section class="logokontakt">
-    <img src="images/logo404.png" alt="logo">
-</section>
+    <main>
 
-<!--Overskrift-->
-<section class="overskrift">
-    <h2>Vi vil rigtig gerne høre fra dig!</h2>
-</section>
+        <!--Logo i toppen-->
+        <section class="logokontakt">
+            <img src="images/misc/NFP-logomørk-laptop.png" alt="logo">
+        </section>
 
-<!--Tekst under overskriften-->
-<section class="tekst">
-    <p>Har du spørgsmål, mangler svar eller har et design du gerne vil have på kroppen, så 
-        skriv endelig til os. Vi foretrækker ved Nord For Paradis, at du kontakter os via Instagram
-         eller telefon, da det giver den mest personlige betjening. Du kan her sende et
-          billede, eller forklare hvad du har af tanker og ideer eller andre spørgsmål. 
-          Ellers hop forbi shoppen, på Høegh-Guldbergs Gade 37, kælderen. Så tager vi meget gerne
-           en snak med dig! </p>
-</section>
+        <!--Overskrift-->
+        <section id="overskrift">
+            <h2>Vi vil rigtig gerne høre fra dig!</h2>
+        </section>
 
-<!--Kontakt knappen-->
-<section class="knap">
-    <a href="https://www.instagram.com/nordforparadis/" class="button">Book Her</a>
-</section>
+        <!--Tekst under overskriften-->
+        <section id="tekst">
+            <p>Har du spørgsmål, mangler svar eller har et design du gerne vil have på kroppen, så
+                skriv endelig til os. Vi foretrækker ved Nord For Paradis, at du kontakter os via Instagram
+                eller telefon, da det giver den mest personlige betjening. Du kan her sende et
+                billede, eller forklare hvad du har af tanker og ideer eller andre spørgsmål.
+                Ellers hop forbi shoppen, på Høegh-Guldbergs Gade 37, kælderen. Så tager vi meget gerne
+                en snak med dig! </p>
+        </section>
 
-<!--Kontakt info-->
-<section class="kontaktinfo">
-    <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p> 
-    <p>nfp@tattoo.dk</p> 
-    <p>+45 26154712</p> 
-</section>
+        <!--Kontakt knappen –– TODO: LAV TIL BUTTON-->
+        
+        <section id="knap">
+            <a href="https://www.instagram.com/nordforparadis/" id="button">Book Her</a>
+        </section>
 
+        <!--Kontakt info-->
+        <section id="kontaktinfo">
+            <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
+            <p>nfp@tattoo.dk</p>
+            <p>+45 26154712</p>
+        </section>
 
-<footer>
+    </main>
 
-</footer>
-    
+    <footer>
+        <div class="åbningsTiderFooter">
+            <h3>Åbningstider</h3>
+            <p>Hverdage kl. 10-15</p>
+        </div>
+
+        <div class="kontaktFooter">
+            <h3>Kontakt</h3>
+            <p>nfp@tattoo.com</p>
+            <p>Tlf.<a href="tel:+4526154712">+45 2615 4712</a></p>
+            <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
+            <p>CVR: 43619144</p>
+        </div>
+
+        <div>
+            <div class="harDuSpørgsmålFooter">
+                <h3>Har du spørgsmål?</h3>
+                <p>Se gerne om svaret på dit spørgsmål står i vores FAQ.</p>
+                <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/nordforparadis/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/people/Nord-for-Paradis-Tattoo/100088443669315/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+            </div>
+        </div>
+
+        <div id="footerLogo">
+            <img src="images/misc/NFP-logolys-laptop.png" alt="footerlogo">
+        </div>
+    </footer>
+
 </body>
-    <!--Footer-->
+
 
 </html>

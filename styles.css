@@ -1,9 +1,13 @@
 
-video,
-img,
-#stemningsBilleder {
+#frontVidContainer video,
+#om img,
+#roomTat img,
+#stemningsBilleder,
+#shop img,
+#roomPaintings img {
     width: 100%;
 }
+
 
 /*TOPVIDEO*/
 
@@ -40,7 +44,6 @@ img,
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: #F59C6B;
     font-size: 40px;
 
     animation: bounce 3s infinite;
@@ -340,14 +343,15 @@ button {
 
 /*KONTAKT OS SEKTION*/
 #besked {
-    background-image: url(images/lokale/bgplante.JPG), url(images/pynt/bg.png);
+    background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-size: cover;
 
-    padding: 15%;
+    padding: 10%;
 
     text-align: center;
+
 }
 
 #besked p {
