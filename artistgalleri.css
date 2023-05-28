@@ -3,67 +3,77 @@ body {
 }
 
 /*Big photo*/
-.bigphoto img {
-  width: 100%;
+#bigPhoto {
+  position:relative;
+  /*img used*/
+  background-image: url(images/portrætter/rasstat.jpg);
+
+  /*specific height*/
+  min-height: 700px;
+
+
+  /*parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Overskrift*/
-.overskrift {
-  margin-top: 25px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  color: #4D7373;
+#bigPhoto h1 {
+  position: absolute;
+
+
+
+  color:#DCE5E2;
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
 }
 
 /*Lidt om artisten, billede og styling af billede og tekst*/
-.artist {
+#artist {
   display: flex;
-  margin-top: 25px;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  height:auto;
+  padding:5% 15%;
 }
 
-.artist img {
-  height: 400px;
-  margin: 20px;
+#artist img {
   border-radius: 20px;
 }
-
-.artisttekst {
-  width: 25%;
-  margin: 20px;
-  padding: 30px;
+#artistTekst{
+  padding:5%;
 }
 
-.artisttekst h3 {
-  color: #4D7373;
-  font-size: 20px;
+#artist p{
+ padding-bottom:2%;
 }
 
-.artisttekst p {
-  color: #4D7373;
+#portræt{
+  width:200%;
+  padding:5%;
 }
 
 /*Button styling*/
-.knap {
+#knap {
   margin: 25px;
   display: flex;
   justify-content: left;
 }
 
-.button {
-  margin-top: 2em;
-  padding: 1% 2% 1% 2%;
-  border-radius: 10px;
-  color: #F59C6B;
-  background-color: transparent;
-  border: 1px solid #F59C6B;
-  transition: .5s ease-in-out;
-  text-decoration: none;
-}
+
 
 /*Hover effekt på knappen*/
-.button:hover {
+#button:hover {
   color: #DCE5E2;
   background-color: #F59C6B;
   border: 1px solid #F59C6B;
@@ -71,31 +81,31 @@ body {
 }
 
 /*Billede galleri, styling og hover effekt*/
-.billedegalleri {
+#billedegalleri {
   display: flex;
   justify-content: center;
   margin: 10px;
   height: 250px;
 }
 
-.billedegalleri img {
+#billedegalleri img {
   margin: 10px;
   border-radius: 20px;
 }
 
-.billedegalleri img:hover {
+#billedegalleri img:hover {
   transform: scale(1.1);
   transition: 1s;
 }
 
 /*Sidste sektion på siden med blurred billede og tekst*/
 
-.bg {
+#bg {
   position: relative;
 }
 
 /*Teksten på baggrunden*/
-.bg-text {
+#bg-text {
   color: #4D7373;
   font-weight: bold;
   position: absolute;
@@ -108,12 +118,12 @@ body {
   text-align: center;
 }
 
-.bg-text p {
+#bg-text p {
   margin: 20px;
 }
 
 /*Baggrundsbillede*/
-.bg img {
+#bg img {
   filter: blur(8px);
   -webkit-filter: blur(8px);
   height: 800px;
@@ -121,16 +131,16 @@ body {
   opacity: 0.2;
 }
 
-.bg-text button {
+#bg-text button {
   margin: 50px;
 }
 
-.knap {
+#knap {
   display: flex;
   justify-content: center;
 }
 
-/*Reveal effekt*/
+/*Reveal effekt
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -141,4 +151,4 @@ body {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
+}*/

@@ -4,7 +4,7 @@
 #roomTat img,
 #stemningsBilleder,
 #shop img,
-#roomPaintings img {
+#roomPaintings img, img {
     width: 100%;
 }
 
@@ -18,6 +18,7 @@
 
 #frontVidContainer button {
     position: absolute;
+
 
     top: 55%;
     left: 50%;
@@ -168,9 +169,8 @@
     color: #4D7373;
 }
 
-button {
-    margin-top: 1.5rem;
-    padding: 1.5% 4% 1.5% 4%;
+#om .btn {
+    padding: 1.5% 4%;
     border-radius: 10px;
 
     transition: .5s ease-in-out;
@@ -219,6 +219,7 @@ button {
     display:block;
 }
 
+/*
 #mobilShop{
     display:none;
 }
@@ -346,20 +347,21 @@ button {
     background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    background-size: cover;
+    background-size: 100% 90%;
+ 
 
-    padding: 10%;
+    padding: 15%;
 
     text-align: center;
 
 }
 
 #besked p {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 10%;
 }
 
 #besked>button {
     margin-top: 2em;
-    padding: 1% 2% 1% 2%;
+    padding: 1% 2%;
     border-radius: 10px;
 }

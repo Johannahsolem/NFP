@@ -8,63 +8,69 @@ main{
   display:flex;
   align-items: center;
   flex-direction: column;
-
+  padding:5% 2% 15% 2%;
 }
 
-#logokontakt img {
+/*NAV A STREG UNDER AKTIV SIDE*/
+#navLaptop .nav:nth-child(4) {
+  position: relative;
+  color: #dce5e2;
+}
+
+#navLaptop .nav:nth-child(4):before {
+  content: "";
+  position: absolute;
+  display: block;
   width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dce5e2;
+  transform: scaleX(1);
+  text-decoration: underline;
 }
 
+/*LOGO*/
 #logokontakt {
-  display: flex;
-  justify-content: center;
+  display:flex;
+
+  align-items: center;
+  width:15%;
 }
 
-#overskrift {
-  margin-top: 25px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  color: #4D7373;
-}
+/*INDHOLDET PÅ SIDEN*/
+#indhold{
+  display:flex;
+ justify-content: center;
+ padding-left:10%;
+ padding-top: 5%;
 
-#tekst {
-  margin-top: 25px;
-  max-width: 30%;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: #4D7373;
   text-align: center;
 }
 
-#knap {
-  margin: 25px;
-  display: flex;
-  justify-content: center;
+/*HAR DU SPØRGSMÅL OG OPLYSNINGER*/
+#txt{
+  width: 40%;
 }
 
-#button {
+#oplysninger{
+  width:60%;
+}
+
+#oplysninger p{
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+#oplysninger a{
   color: #4D7373;
   text-decoration: none;
-  text-align: center;
-  background-color: #F59C6B;
-  border: none;
-  padding: 10px 20px;
-  margin: 4px 2px;
-  border-radius: 16px;
 }
 
-#button:hover {
-  color: #F59C6B;
-  background-color: #4D7373;
-  transition: 0.5s;
+#oplysninger a:hover{
+  text-decoration: underline;
 }
 
-#kontaktinfo p {
-  display: flex;
-  justify-content: center;
-  color: #4D7373;
-  margin: 5px;
-}
+/*BUTTON*/
+
+

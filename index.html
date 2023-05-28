@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="generalstyles.css">
     <link rel="stylesheet" href="headerfooter.css">
-   
+
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -39,6 +39,10 @@
 
 
     <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 
 </head>
@@ -72,8 +76,8 @@
     <main>
         <div id="frontVidContainer">
             <h1 id="hello"></h1>
-            <h1 id="nfp">Nord for<br>Paradis</h1>
-            <button type="button" value="register" onclick="clickFunc()" data-aos="zoom-in-up">Kontakt</button>
+            <h1 id="nfp">Nord for<br>Paradis</h1><!--TODO:EVT HOVER? NOP-->
+            <button class="contact" type="submit" data-aos="zoom-in-up" onclick="clickFunc()">Kontakt</button>
             <div id="ikon" onclick="scrollDown()"><i class="fa-solid fa-caret-down"
                     style="color: #f59c6b; cursor:pointer;"></i></div>
 
@@ -81,7 +85,7 @@
         </div>
 
         <section id="om">
-            <div> 
+            <div>
                 <div data-aos="fade-right" id="shop">
                     <img src="images/butik/front.jpg" alt="Butik front">
                 </div>
@@ -90,13 +94,16 @@
                 </div>
             </div>
 
-      
+
 
             <div>
                 <h1 data-aos="fade-left">Hvor vi startede</h1>
                 <p data-aos="fade-left" data-aos-delay="100">Hvis du vil vide mere om os og vores visioner for vores
                     lille perle, så hop ind på vores ‘Om os’ side for at lære mere.</p>
-                <button data-aos="fade-left" data-aos-delay="200">Læs mere</button>
+                    
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <a href="omos.html" class="btn">Læs mere</a>
+                </div>
             </div>
         </section>
 
@@ -109,7 +116,7 @@
             <div id="artistKort">
                 <div data-aos="fade-up" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
-                    <button class="artistMere">Se mere</button>
+                    <button class="artistMere btn">Se mere</button>
                     <div class="artistTxtContainer">
 
                         <h2>Rass</h2>
@@ -123,7 +130,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="100" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
-                    <button class="artistMere">Se mere</button>
+                    <button class="artistMere btn"><a href="404.html">Se mere</a></button>
                     <div class="artistTxtContainer">
 
                         <h2>Sebastian</h2>
@@ -140,7 +147,7 @@
                     <div class="artist"><img src="images/portrætter/klara.png" alt="Klara">
                         <h2>Coming soon...</h2>
                     </div>
-                    <button class="artistMere">Se mere</button>
+                    <button class="artistMere btn" id="klara">Se mere</button>
                     <div class="artistTxtContainer">
 
                         <h2>Klara</h2>
@@ -165,7 +172,8 @@
             <p data-aos="fade-up">Vi elsker at høre fra jer! <br> Om det er et spørgsmål, booking af tid eller et
                 billede af jeres helede tatoveringer. Hop ind på vores kontaktside, og se hvordan du kontakter os bedst
                 muligt. Du selvfølgelig altid velkommen til at følge med på vores instagram.</p>
-            <button type="button" value="register" onclick="clickFunc()" data-aos="fade-up" data-aos-delay="150">Kontakt</button>
+            <div class="contact" type="button" data-aos="fade-up"
+            data-aos-delay="150"> <a href="kontakt.html" class="btn">Kontakt</a></div>
         </section>
     </main>
 
@@ -191,8 +199,10 @@
                 <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
             </div>
             <div id="soMe">
-                <a href="https://www.instagram.com/nordforparadis/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
-                <a href="https://www.facebook.com/people/Nord-for-Paradis-Tattoo/100088443669315/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                <a href="https://www.instagram.com/nordforparadis/"><i
+                        class="fa-brands fa-square-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/people/Nord-for-Paradis-Tattoo/100088443669315/"><i
+                        class="fa-brands fa-square-facebook fa-3x"></i></a>
             </div>
         </div>
 
