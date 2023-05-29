@@ -1,14 +1,12 @@
-
-
 body {
   background-color: #DCE5E2;
 }
 
-main{
-  display:flex;
+main {
+  display: flex;
   align-items: center;
   flex-direction: column;
-  padding:5% 2% 15% 2%;
+  padding: 5% 2% 15% 2%;
 }
 
 /*NAV A STREG UNDER AKTIV SIDE*/
@@ -32,45 +30,45 @@ main{
 
 /*LOGO*/
 #logokontakt {
-  display:flex;
+  display: flex;
 
   align-items: center;
-  width:15%;
+  width: 15%;
 }
 
 /*INDHOLDET PÅ SIDEN*/
-#indhold{
-  display:flex;
- justify-content: center;
- padding-left:10%;
- padding-top: 5%;
+#indhold {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-top: 5%;
 
   text-align: center;
 }
 
 /*HAR DU SPØRGSMÅL OG OPLYSNINGER*/
-#txt{
+#txt {
   width: 40%;
 }
 
-#oplysninger{
-  width:60%;
+#oplysninger {
+  width: 60%;
 }
 
-#oplysninger p{
+#oplysninger p {
   font-size: 12pt;
   font-weight: 300;
 }
 
-#oplysninger a{
+#oplysninger p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+#oplysninger p>a {
   color: #4D7373;
   text-decoration: none;
 }
 
-#oplysninger a:hover{
+#oplysninger p>a:hover {
   text-decoration: underline;
 }
-
-/*BUTTON*/
-
-

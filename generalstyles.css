@@ -34,11 +34,11 @@ main h1{
     font-size: 1.5em;
     font-style: normal;
     text-transform: uppercase;
-    padding-bottom:10px;
+    margin-bottom: 10px;
 
 }
 
-main h2, footer h3 {
+main h2, footer h3, main h3 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
     font-size: 1em;
@@ -46,7 +46,7 @@ main h2, footer h3 {
     text-transform: uppercase;
 }
 
-main p, footer p, footer a{
+main p, footer p{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -59,13 +59,13 @@ footer p, footer a{
     color:#DCE5E2;
 }
 
-.btn, button{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 10pt;
-    font-style: normal;
-    font-weight: 300;
-    text-decoration: none;
+.btn, .artistMere{
     border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: 400;
 
     color: #F59C6B;
     background-color: transparent;
@@ -73,11 +73,11 @@ footer p, footer a{
 
     transition: .5s ease-in-out;
 
-    padding:5px;
+    padding:10px;
 
 }
 
-.btn:hover, button:hover {
+.btn:hover, .artistMere:hover{
     color: #DCE5E2;
     background-color: #F59C6B;
     border: 1px solid transparent;
@@ -85,54 +85,3 @@ footer p, footer a{
     cursor: pointer;
 }
 
-
-/*MOBIL
-@media screen and (max-width:910px) {
-
-    main{
-        position: relative;
-        top:4.5em;
-    }
-    
-    
-    main h1{
-        font-family: "espiritu", sans-serif;
-        font-weight: 400;
-        font-size: 1em;
-        font-style: normal;
-        text-transform: uppercase;
-    
-    }
-    
-    main h2 {
-        font-family: "espiritu", sans-serif;
-        font-weight: 400;
-        font-size: 0.5em;
-        font-style: normal;
-        text-transform: uppercase;
-    }
-    
-    main p{
-        font-family: 'Be Vietnam Pro', sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 8pt;
-        line-height: 1.5em;
-        color: #4D7373;
-    }
-    
-    button{
-        font-family: 'Be Vietnam Pro', sans-serif;
-        font-size: 8pt;
-        font-style: normal;
-        font-weight: 300;
-    
-        color: #F59C6B;
-        background-color: transparent;
-        border: 1px solid #F59C6B;
-    
-        transition: .5s ease-in-out;
-    
-    }
-    
-}*/

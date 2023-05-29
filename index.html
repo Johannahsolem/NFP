@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="headerfooter.css">
 
     <link rel="stylesheet" href="responsive.css">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--SCRIPT-->
@@ -76,12 +77,13 @@
     <main>
         <div id="frontVidContainer">
             <h1 id="hello"></h1>
-            <h1 id="nfp">Nord for<br>Paradis</h1><!--TODO:EVT HOVER? NOP-->
-            <button class="contact" type="submit" data-aos="zoom-in-up" onclick="clickFunc()">Kontakt</button>
+            <h1 id="nfp">Nord f&#9775r<br>Paradis</h1><!--TODO:EVT HOVER? NOP-->
+
+            <div data-aos="zoom-in-up"><a class="btn" href="kontakt.html">Kontakt</a></div>
             <div id="ikon" onclick="scrollDown()"><i class="fa-solid fa-caret-down"
                     style="color: #f59c6b; cursor:pointer;"></i></div>
 
-            <video src="images/NFP2.mp4" type="mp4" autoplay loop muted></video>
+            <video src="images/NFP2.mp4" autoplay loop muted></video>
         </div>
 
         <section id="om">
@@ -100,10 +102,16 @@
                 <h1 data-aos="fade-left">Hvor vi startede</h1>
                 <p data-aos="fade-left" data-aos-delay="100">Hvis du vil vide mere om os og vores visioner for vores
                     lille perle, så hop ind på vores ‘Om os’ side for at lære mere.</p>
-                    
+
                 <div data-aos="fade-left" data-aos-delay="200">
                     <a href="omos.html" class="btn">Læs mere</a>
                 </div>
+
+
+
+
+
+
             </div>
         </section>
 
@@ -116,7 +124,7 @@
             <div id="artistKort">
                 <div data-aos="fade-up" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/rass.png" alt="Rass"></div>
-                    <button class="artistMere btn">Se mere</button>
+                    <a href="rassgalleri.html" class="artistMere">Se mere</a>
                     <div class="artistTxtContainer">
 
                         <h2>Rass</h2>
@@ -130,7 +138,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="100" class="indivArtist">
                     <div class="artist"><img src="images/portrætter/seb.png" alt="Sebastian"></div>
-                    <button class="artistMere btn"><a href="404.html">Se mere</a></button>
+                    <a href="404.html" class="artistMere">Se mere</a>
                     <div class="artistTxtContainer">
 
                         <h2>Sebastian</h2>
@@ -143,11 +151,11 @@
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="200" class="indivArtist">
+                <div class="indivArtist" data-aos="fade-up" data-aos-delay="200">
                     <div class="artist"><img src="images/portrætter/klara.png" alt="Klara">
                         <h2>Coming soon...</h2>
                     </div>
-                    <button class="artistMere btn" id="klara">Se mere</button>
+                    <a href="404.html" class="artistMere">Se mere</a>
                     <div class="artistTxtContainer">
 
                         <h2>Klara</h2>
@@ -172,8 +180,9 @@
             <p data-aos="fade-up">Vi elsker at høre fra jer! <br> Om det er et spørgsmål, booking af tid eller et
                 billede af jeres helede tatoveringer. Hop ind på vores kontaktside, og se hvordan du kontakter os bedst
                 muligt. Du selvfølgelig altid velkommen til at følge med på vores instagram.</p>
-            <div class="contact" type="button" data-aos="fade-up"
-            data-aos-delay="150"> <a href="kontakt.html" class="btn">Kontakt</a></div>
+
+            <div data-aos="fade-up" data-aos-delay="100"><a class="btn" href="kontakt.html">Kontakt</a></div>
+
         </section>
     </main>
 

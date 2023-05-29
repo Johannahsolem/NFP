@@ -23,8 +23,6 @@ body {
 #bigPhoto h1 {
   position: absolute;
 
-
-
   color:#DCE5E2;
   font-size: 5em;
   text-transform: uppercase;
@@ -63,92 +61,83 @@ body {
   padding:5%;
 }
 
-/*Button styling*/
-#knap {
-  margin: 25px;
-  display: flex;
-  justify-content: left;
-}
-
-
-
-/*Hover effekt på knappen*/
-#button:hover {
-  color: #DCE5E2;
-  background-color: #F59C6B;
-  border: 1px solid #F59C6B;
-  cursor: pointer;
+#artistTekst > div{
+  margin-top: 5%;
 }
 
 /*Billede galleri, styling og hover effekt*/
-#billedegalleri {
+#billedeGalleri {
   display: flex;
-  justify-content: center;
-  margin: 10px;
-  height: 250px;
+align-items: center;
+  flex-direction: column;
+  padding:5% 10%;
+  height: auto;
+
+  background-color: rgba(77,115,115,0.1);
 }
 
-#billedegalleri img {
-  margin: 10px;
-  border-radius: 20px;
+#billedeGalleri div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:80%;
 }
 
-#billedegalleri img:hover {
-  transform: scale(1.1);
-  transition: 1s;
+#billedeGalleri img {
+  margin: 15px;
+  border-radius: 10px;
+  opacity:.8;
+
+
+  transition: .5s ease-in-out;
+}
+
+#billedeGalleri img:hover {
+  opacity:1;
+
+  
 }
 
 /*Sidste sektion på siden med blurred billede og tekst*/
 
 #bg {
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  /*img used*/
+  background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
+
+  height:700px;
+  /*parallax scrolling effect*/
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+
 }
 
 /*Teksten på baggrunden*/
 #bg-text {
-  color: #4D7373;
-  font-weight: bold;
-  position: absolute;
+  position: relative;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 60%;
-  padding: 20px;
+
+  padding:5% 10%;
+
   text-align: center;
+
+
+}
+
+#bg-text > div{
+  padding:3% 15% 0% 15%;
 }
 
 #bg-text p {
-  margin: 20px;
+ margin-bottom:10px;
 }
 
-/*Baggrundsbillede*/
-#bg img {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 800px;
-  width: 100%;
-  opacity: 0.2;
-}
-
-#bg-text button {
-  margin: 50px;
-}
-
-#knap {
-  display: flex;
-  justify-content: center;
-}
-
-/*Reveal effekt
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}*/

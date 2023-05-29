@@ -1,36 +1,20 @@
-const hello = document.querySelector("hello");
-const nfp = document.querySelector("nfp");
+const hello = document.getElementById("hello");
+const nfp = document.getElementById("nfp");
+
 const indivArtist = document.querySelector("artist");
 const txtContainer = document.querySelector("artistTxtContainer");
 const artistMere = document.querySelector("artistMere");
 
-/*TODO:
-const contact = document.querySelector("contact");
-const klara = document.querySelector("klara");
-const omMere = document.querySelector("omMere");
-const book = document.querySelector("bookHer");*/
-
-const timeOut = setTimeout(greetMe);
-const stopTime = setTimeout(changeTxt, 4000);
-
-/*TODO:
-const buttons = [contact, omMere, artistMere, klara];
-
-buttons[0].addEventListener("click", clickFunc);*/
-
-
-//Tryk på button til kontakt
-function clickFunc() {
-
-    window.location = "kontakt.html"
-    }
 
 //Tryk på pil og scroll ned til om sektion
 function scrollDown() {
     window.location = "#om";
 }
 
-//VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php 
+//VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php / https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif 
+const timeOut = setTimeout(greetMe);
+const timeStop = setTimeout(changeTxt, 3000);
+
 function greetMe() {
 
     const time = new Date().getHours();
@@ -51,14 +35,11 @@ function greetMe() {
     nfp.style.animationName = "fadeIn";
 
     hello.innerHTML = greeting;
-    hello.style.animationName = "zoomIn";
-
-
 
 }
 
-function changeTxt() {
 
+function changeTxt() {
     nfp.style.display = "block";
     hello.style.display = "none";
 }
