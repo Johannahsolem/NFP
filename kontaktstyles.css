@@ -10,12 +10,12 @@ main {
 }
 
 /*NAV A STREG UNDER AKTIV SIDE*/
-#navLaptop .nav:nth-child(4) {
+#navLaptop #navKontakt {
   position: relative;
   color: #dce5e2;
 }
 
-#navLaptop .nav:nth-child(4):before {
+#navLaptop #navKontakt:before {
   content: "";
   position: absolute;
   display: block;
@@ -45,6 +45,24 @@ main {
 
   text-align: center;
 }
+
+#indhold404{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#indhold404 > #txt{
+  padding:2%;
+}
+
+#indhold404 > #oplysninger{
+  margin-bottom: 3%;
+}
+
+
 
 /*HAR DU SPØRGSMÅL OG OPLYSNINGER*/
 #txt {

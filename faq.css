@@ -17,13 +17,13 @@
   text-decoration: underline;
 }
 
-main{
-  height:auto;
+main {
+  height: auto;
 }
 
 .faqKort {
   background-color: #F5F9F8;
-  min-height:300px;
+  min-height: 300px;
 
   width: 500px;
   margin: 60px;
@@ -50,19 +50,19 @@ main{
 }
 
 /*TEKST OVENPÅ BILLEDE*/
-main > div h1{
-      position: absolute;
+main>div h1 {
+  position: absolute;
 
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60pt;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60pt;
 
-    color: #DCE5E2;
-    text-transform: uppercase;
+  color: #DCE5E2;
+  text-transform: uppercase;
 }
 
-main > div h2{
+main>div h2 {
   position: absolute;
 
   top: 55%;
@@ -77,40 +77,38 @@ main > div h2{
 }
 
 /*SIDENS BESKRIVELSE*/
-#beskrivelse{
-  padding:5% 15% 0% 15%;
+#beskrivelse {
+  padding: 5% 15% 0% 15%;
 }
 
-#beskrivelse > p{
-  margin-bottom:2%;
+#beskrivelse>p {
+  margin-bottom: 2%;
   text-align: center;
   font-size: 12pt;
 }
 
 
 /*SPØRGSMÅL*/
-#kort{
+#kort {
   display: flex;
-  padding:3% 10%;
+  padding: 3% 10%;
 }
 
-.faqKort h3{
+.faqKort h3 {
   text-decoration: none;
   margin-bottom: 10px;
 }
 
 /*KONTAKT*/
-#kontaktOplysninger{
+#kontaktOplysninger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:550px;
+  height: 550px;
 
 }
 
-#kontaktOplysninger > div{
-  width:12%;
-  margin-bottom:2%;
+#kontaktOplysninger>div {
+  width: 12%;
+  margin-bottom: 2%;
 }
-
-

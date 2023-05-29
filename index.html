@@ -31,8 +31,6 @@
     <link rel="stylesheet" href="generalstyles.css">
     <link rel="stylesheet" href="headerfooter.css">
 
-    <link rel="stylesheet" href="responsive.css">
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--SCRIPT-->
@@ -50,24 +48,13 @@
 
 <body>
     <header>
-        <!--
-        <nav id="navMobile">
-            <div id="logo">
-                <a href="index.html"><img src="images/misc/NFP-logolys-mobil.png" alt="NFP logo"></a>
-            </div>
-
-            <div id="burger">
-                <a href="dropdown.html"><i class="fa-solid fa-bars fa-lg" style="color: #dce5e2;"></i></a>
-            </div>
-        </nav>-->
-
         <nav id="navLaptop">
             <a class="nav" href="omos.html">Om os</a>
-            <a class="nav" href="artister.html">Artister</a>
+            <a id="navArtister" href="artister.html">Artister</a>
 
             <div id="logo"><a href="index.html"><img src="images/misc/NFP-logolys-laptop.png" alt="NFP logo"></a></div>
 
-            <a class="nav" href="kontakt.html">Kontakt</a>
+            <a id="navContact" href="kontakt.html">Kontakt</a>
             <a class="nav" href="faq.html">faq</a>
 
         </nav>
@@ -77,7 +64,7 @@
     <main>
         <div id="frontVidContainer">
             <h1 id="hello"></h1>
-            <h1 id="nfp">Nord f&#9775r<br>Paradis</h1><!--TODO:EVT HOVER? NOP-->
+            <h1 id="nfp">Nord f&#9775r<br>Paradis</h1>
 
             <div data-aos="zoom-in-up"><a class="btn" href="kontakt.html">Kontakt</a></div>
             <div id="ikon" onclick="scrollDown()"><i class="fa-solid fa-caret-down"
@@ -106,10 +93,6 @@
                 <div data-aos="fade-left" data-aos-delay="200">
                     <a href="omos.html" class="btn">Læs mere</a>
                 </div>
-
-
-
-
 
 
             </div>

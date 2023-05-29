@@ -37,7 +37,7 @@ main p {
 #top {
     position:relative;
     /*img used*/
-    background-image: url(images/butik/om-front2.jpg);
+    background-image: url(images/butik/om-front.jpg);
 
     /*specific height*/
     min-height: 700px;
@@ -49,6 +49,18 @@ main p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+main>div h1 {
+    position: absolute;
+  
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60pt;
+  
+    color: #DCE5E2;
+    text-transform: uppercase;
+  }
 
 /*STARTEN*/
 #start,
