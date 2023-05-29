@@ -6,7 +6,7 @@ body {
 #bigPhoto {
   position: relative;
   /*img used*/
-  background-image: url(images/portrætter/rassport2.jpg);
+  background-image: url(images/portrætter/rassport2.webp);
 
   /*specific height*/
   min-height: 700px;
