@@ -20,7 +20,7 @@
 #artisterne {
   position: relative;
   /*img used*/
-  background-image: url(images/lokale/artisterne.jpg);
+  background-image: url(images/lokale/artisterne.webp);
 
   /*specific height*/
   min-height: 700px;

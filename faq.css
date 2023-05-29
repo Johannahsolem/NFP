@@ -23,11 +23,11 @@ main {
 
 .faqKort {
   background-color: #F5F9F8;
-  min-height: 300px;
+  min-height: 200px;
 
-  width: 500px;
+  width: 50%;
   margin: 60px;
-  padding: 10%;
+  padding: 5%;
   border-radius: 10px;
 
 
@@ -36,7 +36,7 @@ main {
 #faqBigPhoto {
   position: relative;
   /*img used*/
-  background-image: url(images/lokale/faq.jpg);
+  background-image: url(images/lokale/faq.webp);
 
   /*specific height*/
   min-height: 700px;
@@ -89,9 +89,11 @@ main>div h2 {
 
 
 /*SPØRGSMÅL*/
-#kort {
+#kort div {
   display: flex;
-  padding: 3% 10%;
+  align-items: center;
+  padding-left:10%;
+  padding-right:10%;
 }
 
 .faqKort h3 {

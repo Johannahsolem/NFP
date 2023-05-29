@@ -105,7 +105,7 @@ img {
 /*PARALLAX*/
 #roomTat {
     /*img used*/
-    background-image: url(images/lokale/rasshygge2.jpg);
+    background-image: url(images/lokale/rasshygge2.webp);
 
     /*specific height*/
     min-height: 500px;
@@ -119,7 +119,7 @@ img {
 
 #stemningsBilleder {
     /*img used*/
-    background-image: url(images/lokale/lokale3.jpg);
+    background-image: url(images/lokale/lokale3.webp);
 
     /*specific height*/
     min-height: 600px;
@@ -275,13 +275,13 @@ img {
 }
 
 
-/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/NdgjpG*/
+/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
 .indivArtist:hover .artist img,
 .indivArtist:hover .artist h2 {
     opacity: 0.2;
 }
 
-/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/NdgjpG*/
+/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
 .indivArtist:hover .artistMere {
     opacity: 1;
 }
@@ -322,7 +322,7 @@ img {
 
 /*KONTAKT OS SEKTION*/
 #besked {
-    background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
+    background-image: url(images/lokale/bgplante2.png), url(images/pynt/bg.png);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-size: 100% 90%;

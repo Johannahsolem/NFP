@@ -37,7 +37,7 @@ main p {
 #top {
     position: relative;
     /*img used*/
-    background-image: url(images/butik/om-front.jpg);
+    background-image: url(images/butik/om-front.webp);
 
     /*specific height*/
     min-height: 700px;
