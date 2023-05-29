@@ -36,7 +36,7 @@ header {
 }
 
 
-#navLaptop .nav::before{
+#navLaptop .nav::before {
   content: "";
   position: absolute;
   display: block;
@@ -50,7 +50,7 @@ header {
   transition: 0.3s ease;
 }
 
-#navLaptop .nav:hover::before{
+#navLaptop .nav:hover::before {
   transform: scaleX(1);
 }
 

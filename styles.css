@@ -1,10 +1,10 @@
-
 #frontVidContainer video,
 #om img,
 #roomTat img,
 #stemningsBilleder,
 #shop img,
-#roomPaintings img, img {
+#roomPaintings img,
+img {
     width: 100%;
 }
 
@@ -63,7 +63,7 @@
     }
 }
 
-#hello{
+#hello {
     position: absolute;
 
     top: 45%;
@@ -89,7 +89,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
- 
+
 
 @keyframes fadeIn {
     0% {
@@ -155,7 +155,7 @@
 
 #om>div:nth-child(2) p,
 #besked p {
-    margin-bottom:5%;
+    margin-bottom: 5%;
     color: #4D7373;
 }
 
@@ -326,7 +326,7 @@
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-size: 100% 90%;
- 
+
 
     padding: 15%;
 

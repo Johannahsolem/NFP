@@ -1,4 +1,4 @@
-main{
+main {
     padding-bottom: 10%;
 }
 
@@ -35,7 +35,7 @@ main p {
 }
 
 #top {
-    position:relative;
+    position: relative;
     /*img used*/
     background-image: url(images/butik/om-front.jpg);
 
@@ -52,15 +52,15 @@ main p {
 
 main>div h1 {
     position: absolute;
-  
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60pt;
-  
+
     color: #DCE5E2;
     text-transform: uppercase;
-  }
+}
 
 /*STARTEN*/
 #start,

@@ -21,14 +21,14 @@ img {
     max-width: 100%;
 }
 
-main{
+main {
     height: auto;
     position: relative;
-    top:5.5em;
+    top: 5.5em;
 }
 
 
-main h1{
+main h1 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
     font-size: 1.5em;
@@ -38,7 +38,9 @@ main h1{
 
 }
 
-main h2, footer h3, main h3 {
+main h2,
+footer h3,
+main h3 {
     font-family: "espiritu", sans-serif;
     font-weight: 400;
     font-size: 1em;
@@ -46,7 +48,8 @@ main h2, footer h3, main h3 {
     text-transform: uppercase;
 }
 
-main p, footer p{
+main p,
+footer p {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -55,11 +58,13 @@ main p, footer p{
     color: #4D7373;
 }
 
-footer p, footer a{
-    color:#DCE5E2;
+footer p,
+footer a {
+    color: #DCE5E2;
 }
 
-.btn, .artistMere{
+.btn,
+.artistMere {
     border-radius: 10px;
     text-decoration: none;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -73,15 +78,15 @@ footer p, footer a{
 
     transition: .5s ease-in-out;
 
-    padding:10px;
+    padding: 10px;
 
 }
 
-.btn:hover, .artistMere:hover{
+.btn:hover,
+.artistMere:hover {
     color: #DCE5E2;
     background-color: #F59C6B;
     border: 1px solid transparent;
 
     cursor: pointer;
 }
-

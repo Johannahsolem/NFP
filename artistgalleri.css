@@ -4,7 +4,7 @@ body {
 
 /*Big photo*/
 #bigPhoto {
-  position:relative;
+  position: relative;
   /*img used*/
   background-image: url(images/portrætter/rassport2.jpg);
 
@@ -23,7 +23,7 @@ body {
 #bigPhoto h1 {
   position: absolute;
 
-  color:#DCE5E2;
+  color: #DCE5E2;
   font-size: 5em;
   text-transform: uppercase;
   text-align: center;
@@ -40,62 +40,63 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
-  height:auto;
-  padding:5% 15%;
+
+  height: auto;
+  padding: 5% 15%;
 }
 
 #artist img {
   border-radius: 20px;
 }
-#artistTekst{
-  padding:5%;
+
+#artistTekst {
+  padding: 5%;
 }
 
-#artist p{
- padding-bottom:2%;
+#artist p {
+  padding-bottom: 2%;
 }
 
-#portræt{
-  width:200%;
-  padding:5%;
+#portræt {
+  width: 200%;
+  padding: 5%;
 }
 
-#artistTekst > div{
+#artistTekst>div {
   margin-top: 5%;
 }
 
 /*Billede galleri, styling og hover effekt*/
 #billedeGalleri {
   display: flex;
-align-items: center;
+  align-items: center;
   flex-direction: column;
-  padding:5% 10%;
+  padding: 5% 10%;
   height: auto;
 
-  background-color: rgba(77,115,115,0.1);
+  background-color: rgba(77, 115, 115, 0.1);
 }
 
-#billedeGalleri div{
+#billedeGalleri div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width:80%;
+  width: 80%;
 }
 
 #billedeGalleri img {
   margin: 15px;
   border-radius: 10px;
-  opacity:.8;
+  opacity: .8;
 
 
   transition: .5s ease-in-out;
 }
 
 #billedeGalleri img:hover {
-  opacity:1;
+  opacity: 1;
 
-  
+
 }
 
 /*Sidste sektion på siden med blurred billede og tekst*/
@@ -110,7 +111,7 @@ align-items: center;
   /*img used*/
   background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
 
-  height:700px;
+  height: 700px;
   /*parallax scrolling effect*/
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -126,18 +127,17 @@ align-items: center;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding:5% 10%;
+  padding: 5% 10%;
 
   text-align: center;
 
 
 }
 
-#bg-text > div{
-  padding:3% 15% 0% 15%;
+#bg-text>div {
+  padding: 3% 15% 0% 15%;
 }
 
 #bg-text p {
- margin-bottom:10px;
+  margin-bottom: 10px;
 }
-
