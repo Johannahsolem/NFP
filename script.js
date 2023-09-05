@@ -15,7 +15,7 @@ function greetMe() {
 
     const time = new Date().getHours();
     let greeting;
-    if (time < 06) {
+    if (time < 6) {
         greeting = "Godnat!";
     } else if (time < 10) {
         greeting = "Godmorgen!";
